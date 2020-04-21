@@ -17,7 +17,7 @@
 * [x] Пространство имен приложния ``"namespace"``
 * [x] Параметризация ``"parametrised"``
 * [x] Путь к шаблонам ``"theme"``
-* [x] Максимальный размер ``"staticOptions"``
+* [x] Время кеширования и другие параметры для статичных файлов https://expressjs.com/en/4x/api.html#express.static ``"staticOptions"`` (работает при NODE_ENV=production)
 * [x] Наименование вкладки в браузере\ ``"pageTitle"``
 * [x] `Модули приложения ``"moduleTitles"`` </docs/ru/2_system_description/platform_configuration/deploy_globals.md#модули-приложения>`_
 * [x] `Настройка отображения общего системного меню для всех модулей проекта ``"explicitTopMenu"`` </docs/ru/2_system_description/platform_configuration/deploy_globals.md#настройка-отображения-общего-системного-меню-для-всех-модулей-проекта>`_
