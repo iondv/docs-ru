@@ -27,8 +27,8 @@
 -----------------------------
 
 
-.. image:: https://raw.githubusercontent.com/iondv/docs/master/images/schema.png
-   :target: https://raw.githubusercontent.com/iondv/docs/master/images/schema.png
+.. image:: https://raw.githubusercontent.com/iondv/docs-ru/master/images/schema.png
+   :target: https://raw.githubusercontent.com/iondv/docs-ru/master/images/schema.png
    :alt: shema
 
 

@@ -24,7 +24,7 @@
 
 .. raw:: html
 
-   <h1 align="center"> <a href="https://www.iondv.com/"><img src="https://raw.githubusercontent.com/iondv/docs/master/images/ION_logo_black_mini.png" alt="IONDV. Framework logo" width="600" align="center"></a>
+   <h1 align="center"> <a href="https://www.iondv.com/"><img src="https://raw.githubusercontent.com/iondv/docs-ru/master/images/ION_logo_black_mini.png" alt="IONDV. Framework logo" width="600" align="center"></a>
    </h1>
 
 
@@ -66,10 +66,10 @@
 .. raw:: html
 
    <p align="center">
-   <a href="https://twitter.com/ion_dv" target="_blank"><img src="https://raw.githubusercontent.com/iondv/docs/master/images/twitter.png" height="36px" alt="" title=""></a>
-   <a href="https://www.facebook.com/iondv/" target="_blank"><img src="https://raw.githubusercontent.com/iondv/docs/master/images/facebook.png" height="36px" margin-left="20px" alt="" title=""></a>
-   <a href="https://www.linkedin.com/company/iondv/" target="_blank"><img src="https://raw.githubusercontent.com/iondv/docs/master/images/linkedin.png" height="36px" margin-left="20px" alt="" title=""></a>
-   <a href="https://www.instagram.com/iondv/" target="_blank"><img src="https://raw.githubusercontent.com/iondv/docs/master/images/Insta.png" height="36px" margin-left="20px" alt="" title=""></a>
+   <a href="https://twitter.com/ion_dv" target="_blank"><img src="https://raw.githubusercontent.com/iondv/docs-ru/master/images/twitter.png" height="36px" alt="" title=""></a>
+   <a href="https://www.facebook.com/iondv/" target="_blank"><img src="https://raw.githubusercontent.com/iondv/docs-ru/master/images/facebook.png" height="36px" margin-left="20px" alt="" title=""></a>
+   <a href="https://www.linkedin.com/company/iondv/" target="_blank"><img src="https://raw.githubusercontent.com/iondv/docs-ru/master/images/linkedin.png" height="36px" margin-left="20px" alt="" title=""></a>
+   <a href="https://www.instagram.com/iondv/" target="_blank"><img src="https://raw.githubusercontent.com/iondv/docs-ru/master/images/Insta.png" height="36px" margin-left="20px" alt="" title=""></a>
    </p>
 
 
@@ -78,7 +78,7 @@ This page in `English <https://iondv.readthedocs.io/en/latest>`_
 
 .. raw:: html
 
-   <h1 align="center"> <a href="https://www.iondv.com/"><img src="https://raw.githubusercontent.com/iondv/docs/master/images/iondv_readme1.png" height="800px" alt="IONDV. Framework in numbers: rest api, soap, json, yaml, JavaScript - free open source web business application development" align="center"></a>
+   <h1 align="center"> <a href="https://www.iondv.com/"><img src="https://raw.githubusercontent.com/iondv/docs-ru/master/images/iondv_readme1.png" height="800px" alt="IONDV. Framework in numbers: rest api, soap, json, yaml, JavaScript - free open source web business application development" align="center"></a>
    </h1>
 
 
@@ -116,7 +116,7 @@ IONDV. Framework - это опенсорный фреймворк на node.js �
 
 .. raw:: html
 
-   <h1 align="center"> <a href="https://www.iondv.com/"><img src="https://raw.githubusercontent.com/iondv/docs/master/images/app_structure1.png" height="500px" alt="Application structure - core, metadata, modules" align="center"></a>
+   <h1 align="center"> <a href="https://www.iondv.com/"><img src="https://raw.githubusercontent.com/iondv/docs-ru/master/images/app_structure1.png" height="500px" alt="Application structure - core, metadata, modules" align="center"></a>
    </h1>
 
 
