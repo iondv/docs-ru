@@ -22,7 +22,7 @@
 
 Получение текущего положения обьекта в БП:
 
-.. code-block::
+.. code-block:: text
 
    '/:class/:id', 'GET'
 
@@ -31,7 +31,7 @@
 
 Выполнение переходов объекта по БП (в том числе последовательных):
 
-.. code-block::
+.. code-block:: text
 
    '/:class/:id', 'PUT' 
    {
@@ -58,7 +58,7 @@
 
 Принудительное перемещение объекта в указанные состояния БП:
 
-.. code-block::
+.. code-block:: text
 
    '/:class/:id', 'PATCH' 
    ["workflow1@namespace.state1", "workflow2@namespace.state2"]
@@ -70,13 +70,13 @@
 
 Запрос (метод GET):
 
-.. code-block::
+.. code-block:: bash
 
    curl -X GET -u demo@local:ion-demo http://dnt.iondv.com/rest/crud/workflowBase@develop-and-test/1
 
 Ответ:
 
-.. code-block::
+.. code-block:: js
 
    {
        "_id":"1",

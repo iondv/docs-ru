@@ -12,7 +12,7 @@ Cервис публикации метаданных
 
 Список GET-методов:
 
-.. code-block::
+.. code-block:: text
 
    /getMeta/:name
    /listMeta
