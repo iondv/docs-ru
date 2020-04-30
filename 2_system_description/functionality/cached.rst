@@ -63,8 +63,8 @@
 .. code-block:: ini
 
    ...
-   cache.module - модуль используемый репозиторием данных для кеширования. 
-   (варианты: ion://memcached, ion://redis, ion://innerCache)
+   cache.module=redis // - модуль используемый репозиторием данных для кеширования. 
+   //(варианты: ion://memcached, ion://redis, ion://innerCache)
 
    cache.memcached.enabled=true // активируем memcached
    cache.memcached.location1 // сервер1
@@ -74,6 +74,8 @@
    cache.redis.enabled=true // активируем redis
    cache.redis.host=127.0.0.1 // хост redis
    cache.redis.port=6379 // порт redis
+
+   session.type=redis // хранение сессий авторизации в redis
 
 По умолчанию кеширование не используется.
 
