@@ -32,7 +32,8 @@
 
 Запрос к сервису не будет требовать аутентификации, пример запроса ``curl https://dnt.iondv.com/rest/echoo``
 
-dnt: `test/modules/rest/echo.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/echo.spec.js>`_
+Пример запроса к сервису без аутентификации в :doc:`dnt <../services/request_examples>`:
+`test/modules/rest/echo.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/echo.spec.js>`_
 
 .. code-block:: text
 
@@ -50,7 +51,8 @@ dnt: `test/modules/rest/echo.spec.js <https://github.com/iondv/develop-and-test/
   .. code-block:: bash
 
      curl -u demo@local:ion-demo https://dnt.iondv.com/rest/simple
-также в develop-and-test (dnt): `test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/echopwd.spec.js>`_
+пример запроса с авторизацией Basic Auth в :doc:`develop-and-test (dnt) <../services/request_examples>`:
+`test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/echopwd.spec.js>`_
 
 .. code-block:: text
 
@@ -62,13 +64,14 @@ dnt: `test/modules/rest/echo.spec.js <https://github.com/iondv/develop-and-test/
 
      curl -H "auth-user: demo" -H "auth-pwd: ion-demo" -H "auth-user-type: local" https://dnt.iondv.com/rest/simple
 
-или
+  или
 
-.. code-block:: bash
+  .. code-block:: bash
 
-   curl -H "auth-user: demo@local" -H "auth-pwd: ion-demo" https://dnt.iondv.com/rest/simple
+     curl -H "auth-user: demo@local" -H "auth-pwd: ion-demo" https://dnt.iondv.com/rest/simple
 
-dnt: `test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/echopwd.spec.js>`_
+пример запроса с авторизацией учетными данными в заголовке в :doc:`dnt <../services/request_examples>`:
+`test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/echopwd.spec.js>`_
 
 .. code-block:: text
 
@@ -98,7 +101,8 @@ dnt: `test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-te
 
    curl -H "auth-token: c369a361db9742e9a9ae8e9fe55950a571493812" http://dnt.iondv.com/rest/echo-token
 
-dnt: `test/modules/rest/token.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/token.spec.js>`_
+пример запроса с авторизацией через токен в :doc:`dnt <../services/request_examples>`:
+`test/modules/rest/token.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/token.spec.js>`_
 
 .. code-block:: text
 
@@ -171,8 +175,9 @@ dnt: `test/modules/rest/token.spec.js <https://github.com/iondv/develop-and-test
 
       curl -X POST -H "Authorization:Bearer <access_token>" http://dnt.iondv.com/rest/echo-oauth
 
-   dnt: `test/modules/rest/echooauth.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/echooauth.spec.js>`_
+пример запроса к сервису с авторизацией oauth2 в :doc:`dnt <../services/request_examples>`:
+`test/modules/rest/echooauth.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/echooauth.spec.js>`_
 
-    .. code-block:: text
+.. code-block:: text
 
-        /Checking echo-oauth service
+    /Checking echo-oauth service

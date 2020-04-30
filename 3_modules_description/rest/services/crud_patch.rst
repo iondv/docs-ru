@@ -13,7 +13,8 @@
    # Или эквивалентно
    curl -X PUT -u demo@local:demo-ion -H "Content-Type:application/json" -d '{"string_text": "NEW Example", "string_miltilinetext": "NEW Example", "string_formattext": "NEW Example"}' https://dnt.iondv.com/rest/crud/class_string@develop-and-test/66dbb3d0-5583-11e6-aef7-cf50314f026b
 
-dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
+пример запроса к сервису crud для обновления объекта в :doc:`dnt <request_examples>`:
+`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
 

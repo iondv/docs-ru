@@ -12,7 +12,8 @@
 
    curl -X GET -u demo@local:ion-demo https://dnt.iondv.com/rest/crud/class_string@develop-and-test/66dbb3d0-5583-11e6-aef7-cf50314f026b
 
-dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
+пример запроса к сервису crud для получения объекта в :doc:`dnt <request_examples>`:
+`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
 
@@ -25,7 +26,8 @@ dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/
 
    curl -X GET -u demo@local:ion-demo https://dnt.iondv.com/rest/crud/class_string@develop-and-test/66dbb3d0-5583-11e6-aef7-cf50314f026b?_eager=string_text
 
-dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
+пример запроса к сервису crud для получения объекта с жадной загрузкой свойства "table" в :doc:`dnt <request_examples>`:
+`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
 
@@ -55,7 +57,8 @@ dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/
 
    curl -X GET -u demo@local:ion-demo https://dnt.iondv.com/rest/crud/class_string@develop-and-test/
 
-dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
+пример запроса к сервису crud для получения списка объектов в :doc:`dnt <request_examples>`:
+`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
 
@@ -112,7 +115,8 @@ dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/
 
         curl -X GET -u demo@local:ion-demo https://dnt.iondv.com/rest/crud/class_string@develop-and-test/?string_text=example1&_offset=1&_count=2
 
-dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
+пример запроса к сервису crud для получения списка объектов с различными параметрами сдвига и фильтрации в :doc:`dnt <request_examples>`:
+`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
 

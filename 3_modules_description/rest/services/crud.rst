@@ -32,7 +32,8 @@
 
    curl -X POST -u demo@local:ion-demo https://dnt.iondv.com/rest/crud
 
-dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
+пример запроса к сервису crud без параметров в :doc:`dnt <request_examples>`:
+`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: test
 

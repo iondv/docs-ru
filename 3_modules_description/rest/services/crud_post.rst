@@ -15,7 +15,8 @@
       -d '{"string_text": "Example3", "string_miltilinetext": "Example3", "string_formattext": "Example3"}' \
       https://dnt.iondv.com/rest/crud/class_string@develop-and-test/
 
-dnt: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
+пример запроса к сервису crud для создания объекта :doc:`dnt <request_examples>`:
+`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
 

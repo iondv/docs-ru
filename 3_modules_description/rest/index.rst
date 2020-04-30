@@ -18,7 +18,11 @@ REST - модуль IONDV. Framework применяется для быстро�
 Содержание
 ----------
 
+* :doc:`Сервисы REST <services/index>`
+* :doc:`Конфигурация доступа к сервисам <authorization/index>`
+
 .. toctree::
+    :hidden:
     :titlesonly:
 
     Сервисы REST <services/index>

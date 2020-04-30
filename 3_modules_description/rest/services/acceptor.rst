@@ -48,7 +48,8 @@
           "string_text": "Example10", "string_miltilinetext": "Example10", "string_formattext": "Example10"}]' \
       https://dnt.iondv.com/rest/acceptor
 
-dnt: `test/modules/rest/acceptor.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/acceptor.spec.js>`_
+пример запроса на создание объектов к сервису acceptor в :doc:`dnt <request_examples>`:
+`test/modules/rest/acceptor.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/acceptor.spec.js>`_
 
 .. code-block:: text
 
