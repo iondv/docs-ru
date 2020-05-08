@@ -3,7 +3,13 @@
 =================================================
 
 Запрос осуществляется по пути ``<URL сервера>/rest/<название сервиса>/getNode/<код навигации>``,
-где код навигации указывается в формате ``namespace@code``. Например:
+где код навигации указывается в формате ``namespace@code``.
+
+В запросе можно указать :doc:`дополнительные параметры <meta_query_parameters>`:
+
+* ``namespace``
+
+Пример запроса:
 
 .. code-block:: text
 
@@ -66,3 +72,10 @@
        namespace: 'develop-and-test',
        children: [] }]
     }
+
+Этот пример в :doc:`dnt <request_examples>`:
+`test/modules/rest/metadatasrv.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/metadatasrv.spec.js>`_
+
+.. code-block:: text
+
+    /Checking metadata service/# access info about a navigation node: getNode

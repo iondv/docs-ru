@@ -3,7 +3,13 @@
 =============================================================
 
 Запрос осуществляется по пути ``<URL сервера>/rest/<название сервиса>/getNavigationSection/<код секции>``,
-где код секции указывается в формате ``namespace@name``. Например:
+где код секции указывается в формате ``namespace@name``.
+
+В запросе можно указать :doc:`дополнительные параметры <meta_query_parameters>`:
+
+* ``namespace``
+
+Пример запроса:
 
 .. code-block:: text
 
@@ -100,3 +106,10 @@
             children: [] }
         }
     }
+
+Этот пример в :doc:`dnt <request_examples>`:
+`test/modules/rest/metadatasrv.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/metadatasrv.spec.js>`_
+
+.. code-block:: text
+
+    /Checking metadata service/# access info about a navigation section: getNavigationSection

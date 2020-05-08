@@ -3,7 +3,16 @@
 ===================================================================================================================
 
 Запрос осуществляется по пути ``<URL сервера>/rest/<название сервиса>/getListViewModel/<имя класса>/<имя бизнес-процесса>/<имя состояния>``,
-где имя класса и имя бизнес-процесса указываются с неймспейсом. Например:
+где имя класса и имя бизнес-процесса указываются с неймспейсом.
+
+В запросе можно указать :doc:`дополнительные параметры <meta_query_parameters>`:
+
+* ``workflow``
+* ``state``
+* ``namespace``
+* ``version``
+
+Пример запроса:
 
 .. code-block:: text
 
@@ -43,3 +52,10 @@
   className: 'workflowBase@develop-and-test',
   path: 'workflows:simpleWorkflow@develop-and-test.canStart',
   caption: '' }
+
+Этот пример в :doc:`dnt <request_examples>`:
+`test/modules/rest/metadatasrv.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/metadatasrv.spec.js>`_
+
+.. code-block:: text
+
+    /Checking metadata service/# access meta class view model in a certain workflow state: getWorkflowView

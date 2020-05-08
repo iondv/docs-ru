@@ -3,7 +3,15 @@
 ==========================================================
 
 Запрос осуществляется по пути ``<URL сервера>/rest/<название сервиса>/getWorkflow/<имя класса>/<имя бизнес-процесса>``,
-где имя класса и имя бизнес-процесса указываются с неймспейсом. Например:
+где имя класса и имя бизнес-процесса указываются с неймспейсом.
+
+В запросе можно указать :doc:`дополнительные параметры <meta_query_parameters>`:
+
+* ``workflow``
+* ``namespace``
+* ``version``
+
+Пример запроса:
 
 .. code-block:: text
 
@@ -111,3 +119,10 @@
        confirmMessage: null } ],
   metaVersion: '2.0.61.16945',
   namespace: 'develop-and-test' }
+
+Этот пример в :doc:`dnt <request_examples>`:
+`test/modules/rest/metadatasrv.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/metadatasrv.spec.js>`_
+
+.. code-block:: text
+
+    /Checking metadata service/# access information about workflow: getWorkflow

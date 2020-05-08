@@ -3,7 +3,15 @@
 ===============================================================================================
 
 Запрос осуществляется по пути ``<URL сервера>/rest/<название сервиса>/getItemViewModel/<имя класса>``,
-где имя класса указывается с неймспейсом. Например:
+где имя класса указывается с неймспейсом.
+
+В запросе можно указать :doc:`дополнительные параметры <meta_query_parameters>`:
+
+* ``node``
+* ``namespace``
+* ``version``
+
+Пример запроса:
 
 .. code-block:: text
 
@@ -42,3 +50,10 @@
   type: 'item',
   className: 'class_text@develop-and-test',
   path: '' }
+
+Этот пример в :doc:`dnt <request_examples>`:
+`test/modules/rest/metadatasrv.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/metadatasrv.spec.js>`_
+
+.. code-block:: text
+
+    /Checking metadata service/# access meta class item view model: getItemViewModel
