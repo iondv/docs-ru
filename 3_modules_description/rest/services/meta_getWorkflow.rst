@@ -125,4 +125,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access information about workflow: getWorkflow
+    /checking metadata service/# access information about workflow: getWorkflow

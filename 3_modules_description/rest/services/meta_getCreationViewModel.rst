@@ -57,4 +57,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access meta class creation view model: getCreationViewModel
+    /checking metadata service/# access meta class creation view model: getCreationViewModel

@@ -20,4 +20,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# accessing the list of metadata classes filtering by ancestor: listMeta
+    /checking metadata service/# accessing the list of metadata classes filtering by ancestor: listMeta

@@ -15,4 +15,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access information about view mask: getMask
+    /checking metadata service/# access information about view mask: getMask

@@ -160,4 +160,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access meta class list view model: getListViewModel
+    /checking metadata service/# access meta class list view model: getListViewModel

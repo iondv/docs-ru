@@ -58,4 +58,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access meta class view model in a certain workflow state: getWorkflowView
+    /checking metadata service/# access meta class view model in a certain workflow state: getWorkflowView

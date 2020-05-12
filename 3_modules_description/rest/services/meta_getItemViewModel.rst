@@ -56,4 +56,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access meta class item view model: getItemViewModel
+    /checking metadata service/# access meta class item view model: getItemViewModel

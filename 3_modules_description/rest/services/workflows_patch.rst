@@ -1,38 +1,29 @@
 
-workflows PATCH
-===============
+Перемещение объекта в указанное состояние бизнес-процесса: PATCH
+================================================================
 
-Принудительное перемещение объекта в указанные состояния БП:
+Методом **PATCH** осуществляется принудительное перемещение объекта в указанные состояния бизнес-процессов.
+Запрос осуществляется по пути ``<URL сервера>/rest/<название сервиса>/<имя класса>/<id объекта>``. Имя класса указывается с неймспейсом.
 
-.. code-block:: text
+В теле запроса передается массив целевых состояний бизнес-процессов, которые указываются как
+строки в формате ``<имя бизнес-процесса>.<состояние>``. Имя бизнес-процесса указывается с неймспейсом.
+Объект последовательно перемещается в каждое из состояний.
 
-   '/:class/:id', 'PATCH' 
-   ["workflow1@namespace.state1", "workflow2@namespace.state2"]
-
-Для метода **PATCH** передаем в теле запроса массив состояний разных БП. Последовательно помещаем обьект в каждое из переданных состояний.
-
-Пример
-------
-
-Запрос (метод GET):
-
-.. code-block:: bash
-
-   curl -X GET -u demo@local:ion-demo http://dnt.iondv.com/rest/crud/workflowBase@develop-and-test/1
-
-Ответ:
+Пример запроса:
 
 .. code-block:: js
 
-   {
-       "_id":"1",
-       "__string":"1",
-       "__class":"workflowBase@develop-and-test",
-       "__classTitle":"Class of the WF object",
-       "id":1,"stage":"checked",
-       "stage_str":"Checked",
-       "quantaty":12,
-       "result":"Ready",
-       "person":"admin@local",
-       "creatorDefault":"admin@local"
-   }
+    PATCH
+    https://localhost:8888/rest/workflows/workflowBase@develop-and-test/1
+    body: [
+          'simpleWorkflow@develop-and-test.canStart'
+        ]
+
+В ответ будет возвращен список ошибок, возникших при перемещениях, либо пустой список.
+
+Пример ``PATCH`` запроса к ``workflows`` в :doc:`dnt <request_examples>`:
+`test/modules/rest/workflows.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/workflows.spec.js>`_
+
+.. code-block:: text
+
+    /checking workflows service/# move the object to certain state in a workflow: PATCH

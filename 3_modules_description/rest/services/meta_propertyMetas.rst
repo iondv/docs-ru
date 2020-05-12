@@ -142,4 +142,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# accessing info about meta object properties: propertyMetas
+    /checking metadata service/# accessing info about meta object properties: propertyMetas

@@ -24,4 +24,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access the list of navigation nodes in a section: getNodes
+    /checking metadata service/# access the list of navigation nodes in a section: getNodes

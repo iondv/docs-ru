@@ -15,4 +15,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access information about input validators: getValidators
+    /checking metadata service/# access information about input validators: getValidators

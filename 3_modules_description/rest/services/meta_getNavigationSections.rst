@@ -21,4 +21,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# accessing the list of navigation sections: getNavigationSections
+    /checking metadata service/# accessing the list of navigation sections: getNavigationSections

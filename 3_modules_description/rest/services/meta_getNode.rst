@@ -78,4 +78,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access info about a navigation node: getNode
+    /checking metadata service/# access info about a navigation node: getNode

@@ -34,4 +34,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# accessing the list of possible workflows for meta class: getWorkflows
+    /checking metadata service/# accessing the list of possible workflows for meta class: getWorkflows

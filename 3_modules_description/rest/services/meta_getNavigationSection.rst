@@ -112,4 +112,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access info about a navigation section: getNavigationSection
+    /checking metadata service/# access info about a navigation section: getNavigationSection

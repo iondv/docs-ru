@@ -24,4 +24,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access meta class detail view model: getDetailViewModel
+    /checking metadata service/# access meta class detail view model: getDetailViewModel

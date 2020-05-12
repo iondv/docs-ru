@@ -150,4 +150,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# accessing info about metadata class: getMeta
+    /checking metadata service/# accessing info about metadata class: getMeta

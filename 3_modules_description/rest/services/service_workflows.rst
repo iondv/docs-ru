@@ -4,15 +4,17 @@
 
 ``workflows`` - встроенный сервис в rest модуле, который предоставляет возможности контроля и управления бизнес-процессами.
 
-Сервис требует подключения в ``deploy.json`` и обязательного указания ``options.dataRepo`` и ``options.metaRepo``, пример:
+Сервис требует подключения в ``deploy.json`` и обязательного указания ``options.dataRepo``, ``options.metaRepo``, ``options.auth`` и ``options.workflow``, пример:
 
 .. code-block:: js
 
     "workflows": {
             "module": "modules/rest/lib/impl/workflows",
             "options": {
+              "auth": "ion://auth",
               "dataRepo": "ion://dataRepo",
-              "metaRepo": "ion://metaRepo"
+              "metaRepo": "ion://metaRepo",
+              "workflow": "ion://workflow"
             }
     }
 
@@ -32,6 +34,6 @@
 .. toctree::
     :titlesonly:
 
-    GET <workflows_get>
+    Получение текущего положения обьекта в бизнес-процессе: GET <workflows_get>
     Выполнение перехода объекта по бизнес-процессу: PUT <workflows_put>
-    PATCH <workflows_patch>
+    Перемещение объекта в указанное состояние бизнес-процесса: PATCH <workflows_patch>

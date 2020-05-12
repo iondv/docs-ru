@@ -25,4 +25,4 @@
 
 .. code-block:: text
 
-    /Checking metadata service/# access meta class collection view model: getCollectionViewModel
+    /checking metadata service/# access meta class collection view model: getCollectionViewModel
