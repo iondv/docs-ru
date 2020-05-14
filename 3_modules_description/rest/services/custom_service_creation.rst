@@ -1,3 +1,4 @@
+
 Разработка обработчика сервиса в приложении
 ===========================================
 
@@ -150,3 +151,18 @@
                  "dataRepo": "ion://dataRepo"
                }
              }
+
+Для реализации обработки multipart запросов, например для запросов, содержащих файлы, можно использовать библиотеку ``multipart.js`` (``rest/backend/multipart.js``) модуля ``REST``. Пример реализации есть в сервисе ``CRUD``:
+
+.. code-block:: js
+
+    function reqToData(req) {
+        return multipart(req).then(data => data || req.body);
+    }
+
+Этой цели также служит библиотека ``util.js`` (``rest/backend/util.js``), обеспечивающая корректность действий при работе с файлами и файловым хранилищем, пример из ``CRUD``:
+
+.. code-block:: js
+
+    reqToData(req)
+      .then(data => <util.js.>prepareUpdates(options, data, cm, req.params.id))
