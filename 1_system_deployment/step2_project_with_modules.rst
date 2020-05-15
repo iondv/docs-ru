@@ -25,7 +25,7 @@
 #. 
    Открываем файл ``package.json`` в котором смотрим зависимости.
 
-.. code-block::
+.. code-block:: json
 
     "engines": {
        "ion": "3.0.0"

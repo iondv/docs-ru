@@ -7,7 +7,7 @@
     Админ <admin>
     Регистри <registry>
     Отчёты <report>
-    Рест <rest/rest>
+    Рест <rest/index>
     Гантт <gantt_chart>
     Соап <soap>
     ЛК <account>
