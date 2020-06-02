@@ -16,7 +16,7 @@
       https://dnt.iondv.com/rest/crud/class_string@develop-and-test/
 
 пример запроса к сервису crud для создания объекта :doc:`dnt <request_examples>`:
-`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
+`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/tree/master/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
 
