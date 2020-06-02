@@ -56,7 +56,7 @@
 или пустой список.
 
 Примеры ``PUT`` запросов к ``workflows`` в :doc:`dnt <request_examples>`:
-`test/modules/rest/workflows.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/workflows.spec.js>`_
+`test/modules/rest/workflows.spec.js <https://github.com/iondv/develop-and-test/tree/master/test/modules/rest/workflows.spec.js>`_
 
 .. code-block:: text
 
