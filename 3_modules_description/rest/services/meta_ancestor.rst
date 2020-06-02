@@ -19,7 +19,7 @@
 будет запрошена информация по классу-предку класса ``event`` в неймспейсе ``develop-and-test`` - ``basicObj``.
 
 Этот пример в :doc:`dnt <request_examples>`:
-`test/modules/rest/metadatasrv.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/metadatasrv.spec.js>`_
+`test/modules/rest/metadatasrv.spec.js <https://github.com/iondv/develop-and-test/tree/master/test/modules/rest/metadatasrv.spec.js>`_
 
 .. code-block:: text
 
