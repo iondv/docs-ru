@@ -14,7 +14,7 @@
 Так же возможна передача ссылок и коллекций по примеру, описанному для `soap модуля <https://github.com/iondv/soap>`_.
 
 Примеры **POST** запросов с файлами к ``CRUD`` в :doc:`dnt <request_examples>`:
-`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/crud.spec.js>`_
+`test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/tree/master/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
 
