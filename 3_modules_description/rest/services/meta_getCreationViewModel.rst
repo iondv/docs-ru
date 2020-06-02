@@ -53,7 +53,7 @@
   caption: '' }
 
 Этот пример в :doc:`dnt <request_examples>`:
-`test/modules/rest/metadatasrv.spec.js <https://github.com/iondv/develop-and-test/test/modules/rest/metadatasrv.spec.js>`_
+`test/modules/rest/metadatasrv.spec.js <https://github.com/iondv/develop-and-test/tree/master/test/modules/rest/metadatasrv.spec.js>`_
 
 .. code-block:: text
 
