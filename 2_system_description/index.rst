@@ -7,3 +7,4 @@
     indexmeta
     indexconf
     indexfunctionality
+    language/index
