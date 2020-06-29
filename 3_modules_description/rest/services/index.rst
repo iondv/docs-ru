@@ -15,10 +15,10 @@
 .. toctree::
     :titlesonly:
 
-    Регистрация сервиса в приложении <service_configuration>
-    Встроенный сервис "acceptor" <acceptor>
-    Встроенный сервис "token" <token>
-    Встроенный сервис "crud" <crud>
-    Встроенный сервис исполнения бизнес-процессов "workflows" <service_workflows>
-    Встроенный сервис публикации метаданных "meta" <service_metadata>
-    Создание пользовательского сервиса <custom_service_creation>
+    service_configuration
+    acceptor
+    token
+    crud
+    service_workflows
+    service_metadata
+    custom_service_creation

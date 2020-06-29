@@ -4,12 +4,12 @@
 .. toctree::
     :titlesonly:
 
-    Админ <admin>
-    Регистри <registry>
-    Отчёты <report>
-    Рест <rest/index>
-    Гантт <gantt_chart>
-    Соап <soap>
-    ЛК <account>
-    Портал <portal>
-    Дашборд <dashboards>
+    admin
+    registry
+    report
+    rest/index
+    gantt_chart
+    soap
+    account
+    portal
+    dashboards

@@ -21,5 +21,5 @@ REST - модуль IONDV. Framework применяется для создан�
 .. toctree::
     :titlesonly:
 
-    Сервисы REST <services/index>
-    Конфигурация доступа к сервисам <authorization/index>
+    services/index
+    authorization/index
