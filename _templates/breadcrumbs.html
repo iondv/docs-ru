@@ -45,7 +45,7 @@
               <a href="{{ meta['github_url'] }}" class="fa fa-github"> {{ _('Edit on GitHub') }}</a>
             {% else %}
 			<!--{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/{{ theme_vcs_pageview_mode|default("blob") }}/{{ github_version }}{{ conf_py_path }}-->
-              <a href="https://github.com/iondv/docs-ru/{{ pagename }}{{ suffix }}" class="fa fa-github"> {{ _('Edit on GitHub') }}</a>
+              <a href="https://github.com/iondv/docs-ru/blob/master/{{ pagename }}{{ suffix }}" class="fa fa-github"> {{ _('Edit on GitHub') }}</a>
             {% endif %}
           {% elif display_bitbucket %}
             {% if check_meta and 'bitbucket_url' in meta %}
