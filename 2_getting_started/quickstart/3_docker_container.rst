@@ -15,11 +15,12 @@ Docker-контейнер
 
 Требования к окружению
 -----------------------
-По умолчанию используется метод сборки в docker-контейнере. Описание подготовки системы приведено ниже.
 
-Для работы системы должна быть запущенна СУБД Монго ДБ. В docker-контейнере её можно запустить командой:
+Для работы системы должна быть запущена СУБД Монго ДБ. В docker-контейнере её можно запустить командой:
 
 ``docker run --name mongodb -v mongodb_data:/data/db -p 27017:27017 -d mongo``
+
+Описание подготовки системы приведено ниже.
 
 Установка, сбора и запуск приложения одной командой в докер-контейнере
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,7 +31,7 @@ Docker-контейнер
 
 * из репозтория git
 
-``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \   -t docker -q -i -l mongodb develop-and-test``
+``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \   -t docker -q -i -l mongodb nutrition-tickets``
       
 * из архива zip, например полученного с гитхаб 
 `curl -L https://github.com/iondv/nutrition-tickets/archive/master.zip > ./nutrition-tickets.zip` или созданного в 
@@ -41,7 +42,7 @@ Docker-контейнер
       
 * из папки, при этом оригинальная папка приложения не модифицируется. Обратите внимание, что название папки должно соответствовать неймспейсу приложения (если папка распакована с архива github - то в названии обычно добавляется код ветки - нужно переименовать)
 
-``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \     -t docker -q -i -l mongodb ./nutrition-tickets``
+``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \   -t docker -q -i -l mongodb ./nutrition-tickets``
 
 Адрес собранного приложения по умолчанию http://localhost:8888, пользователь ``demo``, пароль ``ion-demo``.
 
@@ -103,7 +104,7 @@ Docker-контейнер
 +----------------------------+------------------------------------------------------------------------------------+
 |-l [value]                  | имя контейнера MongoDB для линковки к собранному контейнеру (тип сборки docker     |
 |                            | или параметр -d при типе сборки git), также формирует конфигурацию с указанием     |
-|                            |  значения mongo uri как [value]:27017                                              |
+|                            | значения mongo uri как [value]:27017                                               |
 +----------------------------+------------------------------------------------------------------------------------+
 | -p [value]                 | путь к директории в которой будет создавать папка с именем приложения и            |
 |                            | осуществляться сборка                                                              |
@@ -152,58 +153,65 @@ Docker-контейнер
 Рекомендуется делать не под root
 
 * Установка последней версии docker для CentOS:
-```
-# Обновляем систему
-sudo yum update
 
-# Устанавливаем необходимые библиотеки 
-yum install -y yum-utils device-mapper-persistent-data lvm2
-#Регистрируем  репозиторий 
-yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-# Установка последней версии 
-yum -y install docker-ce docker-ce-cli containerd.io
-#Запускаем докер
-systemctl start docker
-#Для автоматического запуска докера 
-systemctl enable docker
-```
+1. Обновляем систему
+``sudo yum update``
+
+2. Устанавливаем необходимые библиотеки 
+``yum install -y yum-utils device-mapper-persistent-data lvm2``
+
+3. Регистрируем  репозиторий 
+``yum-config-manager --add-repo`` https://download.docker.com/linux/centos/docker-ce.repo
+
+4. Установка последней версии 
+``yum -y install docker-ce docker-ce-cli containerd.io``
+
+5. Запускаем докер
+``systemctl start docker``
+
+6. Для автоматического запуска докера 
+``systemctl enable docker``
+
 
 * Установка последней версии docker для Ubuntu:
-```
-# Добавляем ключ GDP
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-# Проверяем ключ
-apt-key fingerprint 0EBFCD88
-# Добавляем репозиторий
-sudo add-apt-repository \
+
+1. Добавляем ключ GDP
+``curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -``
+
+2. Проверяем ключ
+``apt-key fingerprint 0EBFCD88``
+
+3. Добавляем репозиторий
+``sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
-   stable"
-# Обновляем репозитории
-sudo apt-get update
-# Ставим последнюю версию
-sudo apt-get install docker-ce docker-ce-cli containerd.io
-```
+   stable"``
+   
+4. Обновляем репозитории
+``sudo apt-get update``
+
+5. Ставим последнюю версию
+``sudo apt-get install docker-ce docker-ce-cli containerd.io``
+
 
 Добавляем текущего пользователя в группу docker:
-```
-sudo groupadd docker
-sudo usermod -aG docker $USER
-```
 
-Проверить можно `docker run hello-world`
+``sudo groupadd docker   sudo usermod -aG docker $USER``
 
-### Запуск Mongo в докере
+Проверить можно ``docker run hello-world``
+
+Запуск Mongo в докере
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Запускаем с маппингом на локальный порт:
-```
-docker run --name mongodb -v mongodb_data:/data/db -p 27017:27017 -d mongo
-```
 
-### Установка node
+``docker run --name mongodb -v mongodb_data:/data/db -p 27017:27017 -d mongo``
+
+Установка node
+~~~~~~~~~~~~~~~~~
+
 Для ускорения сборки, рекомендуется предварительно скачать локально docker-образ node:10, т.к. он занимает 900Мб.
-```
-docker pull node:10
-```
 
-Проверить можно командой `docker images | grep node` - будет отображён спискок локальных образов node
+``docker pull node:10``
+
+Проверить можно командой ``docker images | grep node`` - будет отображён спискок локальных образов node.
