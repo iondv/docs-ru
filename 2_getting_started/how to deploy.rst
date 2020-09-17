@@ -6,9 +6,9 @@
 
 Шаги
 ------
-1. Установка окружения
-2. Установка ядра, модулей и приложения
-3. Сборка и запуск приложения
+1. `Установка окружения <https://github.com/iondv/docs-ru/blob/ORG-405/2_getting_started/how_to_deploy/1_install_environment.rst>`_
+2. `Установка ядра, модулей и приложения <https://github.com/iondv/docs-ru/blob/ORG-405/2_getting_started/how_to_deploy/2_core_modules_app.rst>`_
+3. `Сборка и запуск приложения <https://github.com/iondv/docs-ru/blob/ORG-405/2_getting_started/how_to_deploy/3_build_and_run.rst>`_
 
 Файлы в папке "bin"
 --------------------
@@ -25,4 +25,4 @@
    NB. Запускаются локально из папки platform, шаблоны команд указаны в разделах с описанием назначения скрипта.
    
 
-Подробнее о файлах в папке "bin".
+Подробнее о `файлах в папке "bin" <https://github.com/iondv/docs-ru/blob/ORG-405/2_getting_started/how_to_deploy/files_in_bin_folder.rst>`_.
