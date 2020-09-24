@@ -170,7 +170,7 @@ JSON
 
 **Внимание**
 
-Поле "selection_provider". См. подробнее `Список выбора допустимых значений <atr_selectionprovider.md>`_.
+Поле "selection_provider". См. подробнее `Список выбора допустимых значений <attr_selectionprovider.rst>`_.
 
 
 * "type": "SIMPLE" - простой тип,   
