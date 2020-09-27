@@ -31,7 +31,7 @@
      CALENDAR: 220
    };
 
-**NB:** подробнее см. `таблицу соответствий </docs/ru/2_system_description/metadata_structure/correspondance_table.md>`_.
+**NB:** подробнее см. `таблицу соответствий </3_development/metadata_structure/correspondance_table.rst>`_.
 
 .. list-table::
    :header-rows: 1
