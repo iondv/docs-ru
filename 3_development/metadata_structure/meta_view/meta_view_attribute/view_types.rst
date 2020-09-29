@@ -40,22 +40,22 @@
      - Наименование
      - Описание
    * - 0
-     - `\ **Группа** <type_group.md>`_
+     - `\ Группа <view_types/type_group.rst>`_
      - Особая структура представлений создания и изменения. 
    * - 1
      - Строковое
      - Представление для текстовых данных или приведение к текстовому виду. Настроен trim - т.е. отбрасывание пробелов с начала и конца строки                                                                                                   
    * - 2
-     - `\ **Ссылка** <type_coll_ref.md>`_
+     - `\ Ссылка <view_types/type_coll_ref.rst>`_
      - Для ссылочных полей, связь 1кN. Позволяет задавать возможные операции над объектами класса, на который ссылаемся.
    * - 3
-     - `\ **Коллекция** <type_coll_ref.md>`_
+     - `\ Коллекция <view_types/type_coll_ref.rst>`_
      - Для коллекций, связь Nк1. Позволяет задавать возможные операции над объектами класса, на который ссылаемся.
    * - 4
      - Флаг
      - Чекбокс для логического типа.
    * - 5
-     - `\ **Выпадающий список** </docs/ru/2_system_description/metadata_structure/meta_class/atr_selectionprovider.md>`_
+     - `\ Выпадающий список </3_development/metadata_structure/meta_class/meta_class_attribute/attr_selectionprovider.rst>`_
      - Для имеющих заданное поле ``selectionProvider``.
    * - 7
      - Многострочный текст
@@ -91,16 +91,16 @@
      - Выбор периода
      - Представление позволяющее вести две даты - границы периода.
    * - 100
-     - `\ **Геоданные** </docs/ru/2_system_description/metadata_structure/meta_class/type_geodata100.md>`_
+     - `\ Геоданные </3_development/metadata_structure/meta_class/property_types/type_geodata100.rst>`_
      - Задает представление для типа "Геоданные [100]".
    * - 110
      - Набор файлов
      - Представление для выбора и загрузки нескольких файлов. Контролирует что файлы принадлежат к одному из указанных в мете атрибута типов, общий размер файлов и количество.
    * - 210
-     - `\ **Расписание** </docs/ru/2_system_description/metadata_structure/meta_class/type_schedule210.md>`_
+     - `\ Расписание </3_development/metadata_structure/meta_class/property_types/type_schedule210.rst>`_
      - Представление для типа атрибута "Расписание [210]",  позволяет задать расписание, отображение в табличном виде.
    * - 220
-     - `\ **Календарь** </docs/ru/2_system_description/metadata_structure/meta_class/type_schedule210.md>`_
+     - `\ Календарь </3_development/metadata_structure/meta_class/property_types/type_schedule210.rst>`_
      - Представление для типа атрибута "Расписание [210]",  позволяет задать календарь, отображение в виде календаря.
 
 
