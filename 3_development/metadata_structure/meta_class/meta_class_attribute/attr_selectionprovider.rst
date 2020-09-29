@@ -640,8 +640,8 @@
 Необходимо разделить все возможные сочетания пар атрибутов ``"matrix_base_1"`` и ``"matrix_base_2"`` на 4 вектора. Делить необходимо относительно нуля, то есть каждое поле может быть либо отрицательным, либо неотрицательным. Ниже представлена схема:
 
 
-.. image:: docs-ru/_static/images/sel_provider.jpg
-   :target: docs-ru/_static/images/sel_provider.jpg
+.. image:: /_static/images/sel_provider.jpg
+   :target: /_static/images/sel_provider.jpg
    :alt: Разбиваем на вектора
    
 
