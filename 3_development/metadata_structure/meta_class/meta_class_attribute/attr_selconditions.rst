@@ -301,7 +301,7 @@ JSON
 В ядре реализован атрибут контекста ``$$now``\ , возвращающий текущую дату.
 ``$$now`` доступен везде при задании условий.
 
-Подробнее см. `переменные </docs/ru/2_system_description/metadata_structure/meta_variables.md>`_.
+Подробнее см. `переменные </3_development/metadata_structure/meta_variables.rst>`_.
 
 Пример
 ^^^^^^^
