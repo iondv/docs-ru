@@ -78,7 +78,7 @@ JSON
      - Логическое
      - Разрешает или запрещает использование формы редактирования для детализации данных объекта класса.
    * - ``"version"``
-     - `\ Версия </docs/ru/2_system_description/metadata_structure/meta_class/metaversion.md>`_
+     - `\ Версия </3_development/metadata_structure/meta_class/meta_class_main/metaversion.rst>`_
      - Строка
      - Версия метаданных.
    * - ``"overrideMode"``
@@ -134,7 +134,7 @@ JSON
      - Допустимые значения
      - Описание
    * - ``"tabs"``
-     - `\ Вкладки <tabs.md>`_
+     - `\ Вкладки <meta_view_main/tabs.rst>`_
      - Объект
      - Позволяет  создавать несколько страниц объектов на одной форме представления.
    * - ``"caption"``
@@ -174,7 +174,7 @@ JSON
      - Массив объектов
      - Выбор атрибутов из коллекций, по которым будет произведена фильтрация.
    * - ``"version"``
-     - `\ Версия </docs/ru/2_system_description/metadata_structure/meta_class/metaversion.md>`_
+     - `\ Версия </3_development/metadata_structure/meta_class/meta_class_main/metaversion.rst>`_
      - Строка
      - Версия метаданных.
    * - ``"overrideMode"``
