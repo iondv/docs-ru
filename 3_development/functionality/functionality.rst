@@ -9,25 +9,25 @@
 
    * - Наименование
      - Описание
-   * - :doc:`Шаблоны модулей <module_templates>`
+   * - `Шаблоны модулей <functionality_files/module_templates.rst>`_
      - Разделяются на системные и проектные шаблоны.
-   * - :doc:`Печатные формы <printed_forms>`
+   * - `Печатные формы <functionality_files/printed_forms.rst>`_
      - Передача форматирования в прописном виде.
-   * - :doc:`Задания по расписанию <schedule>`
+   * - `Задания по расписанию <functionality_files/schedule.rst>`_
      - Подсистемы запуска заданий по расписанию.
-   * - :doc:`Уведомления <notifications>`
+   * - `Уведомления <functionality_files/notifications.rst>`_
      - Лента новых уведомлений.
-   * - :doc:`Кеширование данных <cached>`
+   * - `Кеширование данных <functionality_files/cached.rst>`_
      - Кеширование данных обеспечивает быстрый доступ к запрашиваемой информации.
-   * - :doc:`Фильтры на форме <filter>`
+   * - `Фильтры на форме <functionality_files/filter.rst>`_
      - Запрос для фильтра на форме представления списка.
-   * - :doc:`Связь двух неймспейсов <namespace>`
+   * - `Связь двух неймспейсов <functionality_files/namespace.rst>`_
      - Для связывания двух проектов.
-   * - :doc:`ЭЦП <eds>`
+   * - `ЭЦП <functionality_files/eds.rst>`_
      - Электронно-цифровая подпись.
-   * - :doc:`Виртуальные атрибуты <virtual_attr>`
+   * - `Виртуальные атрибуты <functionality_files/virtual_attr.rst>`_
      - Специальный тип атрибутов, который позволяет выводить полный код и наименование класса.
-   * - :doc:`Утилиты <utilities>`
+   * - `Утилиты <functionality_files/utilities.rst>`_
      - Дополнительные программы для более специализированного применения
 
 
