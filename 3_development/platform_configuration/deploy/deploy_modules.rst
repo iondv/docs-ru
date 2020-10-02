@@ -1,14 +1,14 @@
 Настройки модулей в ``deploy.json``
 =======================================
-* Модуль "registry"
-* Модуль "geomap"
-* Модуль "gantt-chart"
-* Модуль "report"
-* Модуль "rest"
-* Модуль "portal"
-* Модуль "ionadmin"
-* Модуль "dashboard"
-* Модуль "diagram"
+* `Модуль "registry" <#модуль-registry>`_
+* `Модуль "geomap" <#модуль-geomap>`_
+* `Модуль "gantt-chart" <#модуль-gantt-chart>`_
+* `Модуль "report" <#модуль-report>`_
+* `Модуль "rest" <#модуль-rest>`_
+* `Модуль "portal" <#модуль-portal>`_
+* `Модуль "ionadmin" <#модуль-ionadmin>`_
+* `Модуль "dashboard" <#модуль-dashboard>`_
+* `Модуль "diagram" <#модуль-diagram>`_
 
 Модуль "registry"
 -------------------
