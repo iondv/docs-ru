@@ -159,7 +159,7 @@
 Дополнительная информация
 -------------------------
 
-`Настройки модулей в deploy.json <../platform_configuration/deploy_modules>`_
+`Настройки модулей в deploy.json </3_development/platform_configuration/deploy/deploy_modules.rst>`_
 
 
 `Мета представлений - Действия </3_development/metadata_structure/meta_view/meta_view_main/commands.rst>`_
