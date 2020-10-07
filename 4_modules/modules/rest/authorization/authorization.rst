@@ -101,7 +101,7 @@
 
     /Checking token service/# basicAuth authorization with admin rights/# check if the generated token is valid (basicAuth) (using echo-token)
 
-подробнее о получении токена: `Получение токена <getting_token.rst>`
+подробнее о получении токена: `Получение токена <getting_token.rst>`_
 
 Сервисы с аутентификацией методом OAuth2
 ----------------------------------------
