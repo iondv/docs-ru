@@ -49,7 +49,7 @@
           "string_text": "Example10", "string_miltilinetext": "Example10", "string_formattext": "Example10"}]' \
       https://dnt.iondv.com/rest/acceptor
 
-пример запроса на создание объектов к сервису acceptor в `dnt <request_examples.rst>`_:
+пример запроса на создание объектов к сервису acceptor в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
 `test/modules/rest/acceptor.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/acceptor.spec.js>`_
 
 .. code-block:: text
