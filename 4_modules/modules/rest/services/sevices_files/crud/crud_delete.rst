@@ -8,7 +8,7 @@
 
    curl -X DELETE -u demo@local:demo-ion https://dnt.iondv.com/rest/crud/class_string@develop-and-test/66dbb3d0-5583-11e6-aef7-cf50314f026b
 
-Пример запроса к сервису crud на удаление объектов в `dnt <request_examples.rst>`_: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/tree/master/test/modules/rest/crud.spec.js>`_
+Пример запроса к сервису crud на удаление объектов в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_: `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/tree/master/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
 
