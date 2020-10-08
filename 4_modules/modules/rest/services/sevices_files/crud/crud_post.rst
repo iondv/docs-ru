@@ -14,7 +14,7 @@
       -d '{"string_text": "Example3", "string_miltilinetext": "Example3", "string_formattext": "Example3"}' \
       https://dnt.iondv.com/rest/crud/class_string@develop-and-test/
 
-Пример запроса к сервису crud для создания объекта `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`:
+Пример запроса к сервису crud для создания объекта `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
 `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/tree/master/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: text
