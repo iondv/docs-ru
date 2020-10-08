@@ -25,7 +25,7 @@
 
 Запрос к сервису не будет требовать аутентификации, пример запроса ``curl https://dnt.iondv.com/rest/echoo``
 
-Пример запроса к сервису без аутентификации в `dnt </services/request_examples.rst>`_:
+Пример запроса к сервису без аутентификации в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
 `test/modules/rest/echo.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echo.spec.js>`_
 
 .. code-block:: text
@@ -44,7 +44,7 @@
   .. code-block:: bash
 
      curl -u demo@local:ion-demo https://dnt.iondv.com/rest/simple
-пример запроса с авторизацией Basic Auth в `develop-and-test (dnt) <../services/request_examples.rst>`_:
+пример запроса с авторизацией Basic Auth в `develop-and-test (dnt) </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
 `test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echopwd.spec.js>`_
 
 .. code-block:: text
@@ -63,7 +63,7 @@
 
      curl -H "auth-user: demo@local" -H "auth-pwd: ion-demo" https://dnt.iondv.com/rest/simple
 
-пример запроса с авторизацией учетными данными в заголовке в `dnt <../services/request_examples.rst>`_:
+пример запроса с авторизацией учетными данными в заголовке в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
 `test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echopwd.spec.js>`_
 
 .. code-block:: text
@@ -94,7 +94,7 @@
 
    curl -H "auth-token: c369a361db9742e9a9ae8e9fe55950a571493812" http://dnt.iondv.com/rest/echo-token
 
-пример запроса с авторизацией через токен в `dnt <../services/request_examples.rst>`_:
+пример запроса с авторизацией через токен в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
 `test/modules/rest/token.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/token.spec.js>`_
 
 .. code-block:: text
@@ -168,7 +168,7 @@
 
       curl -X POST -H "Authorization:Bearer <access_token>" http://dnt.iondv.com/rest/echo-oauth
 
-пример запроса к сервису с авторизацией oauth2 в `dnt <../services/request_examples.rst>`_:
+пример запроса к сервису с авторизацией oauth2 в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
 `test/modules/rest/echooauth.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echooauth.spec.js>`_
 
 .. code-block:: text
