@@ -37,7 +37,7 @@
    curl -X POST --cookie-jar 1.txt -d username="demo@local" -d password="ion-demo" http://localhost:8888/auth
    curl -X GET --cookie 1.txt https://dnt.iondv.com/registry-ajax-api/rest/echo-token
 
-пример запроса в `dnt <../services/request_examples.rst>`_:
+пример запроса в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
 `test/modules/rest/gateway.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/gateway.spec.js>`_
 
 .. code-block:: text
