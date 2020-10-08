@@ -33,7 +33,7 @@
 
    curl -X POST -u demo@local:ion-demo https://dnt.iondv.com/rest/crud
 
-Пример запроса к сервису crud без параметров в `dnt <request_examples.rst>`_:
+Пример запроса к сервису crud без параметров в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
 `test/modules/rest/crud.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/crud.spec.js>`_
 
 .. code-block:: test
@@ -63,4 +63,4 @@
 * Проверка наличия объекта: `метод HEAD <crud_head.rst>`_
 * Обновление объекта: `методы PATCH и PUT <crud_patch.rst>`_
 * Удаление объекта: `метод DELETE <crud_delete.rst>`_
-* Отправка `запросов с файлами <request_with_files.rst>`_
+* Отправка `запросов с файлами </4_modules/modules/rest/services/sevices_files/request/request_with_files.rst>`_
