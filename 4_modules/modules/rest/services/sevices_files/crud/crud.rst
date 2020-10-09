@@ -25,7 +25,7 @@
                }
              }
 
-Аутентификация осуществляется через все основные `типы доступа </4_modules/modules/rest/authorization/authorization.rst>`.
+Аутентификация осуществляется через все основные `типы доступа </4_modules/modules/rest/authorization/authorization.rst>`_.
 
 Пример:
 
