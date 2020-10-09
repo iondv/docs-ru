@@ -23,7 +23,7 @@ Cервис публикации метаданных Meta
 * Получение списка всех классов метаданных: `listMeta <meta_listMeta.rst>`_
 * Получение информации о классе-предке: `ancestor <meta_ancestor.rst>`_
 * Получение информации о свойствах объектов класса: `propertyMetas <meta_propertyMetas.rst>`_
-* Получение списка секций навигации: `etNavigationSections <meta_getNavigationSections.rst>`_
+* Получение списка секций навигации: `getNavigationSections <meta_getNavigationSections.rst>`_
 * Получение информации о секции навигации: `getNavigationSection <meta_getNavigationSection.rst>`_
 * Получение информации об узле навигации: `getNode <meta_getNode.rst>`_
 * Получение списка узлов навигации в секции: `getNodes <meta_getNodes.rst>`_
