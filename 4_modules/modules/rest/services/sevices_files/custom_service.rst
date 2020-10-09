@@ -134,7 +134,7 @@
      "string_miltilinetext":"Example of the \"String [0]\"\r\n in the Multiline text [7] view",
      "string_formattext":"Example of the \r\n \"String [0]\" type \r\n in the \r\nFormatted text [7] view"}]
 
-Пример регистрации тестового сервиса, подробнее см. `Регистрация сервиса в конфигурации приложения <service_configuration.rst>`
+Пример регистрации тестового сервиса, подробнее см. `Регистрация сервиса в конфигурации приложения <service_configuration.rst>`_
 
 .. code-block:: js
 
