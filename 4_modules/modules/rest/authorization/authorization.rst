@@ -7,7 +7,9 @@
 * `Без авторизации <#id5>`_
 * `По учетной записи <#id6>`_
 * `По токену <#id9>`_
-* `Oauth2 <#id12>`_
+* `Oauth2 <#id13>`_
+
+
 
 Сервисы без аутентификации
 --------------------------
@@ -102,6 +104,8 @@
     /Checking token service/# basicAuth authorization with admin rights/# check if the generated token is valid (basicAuth) (using echo-token)
 
 подробнее о получении токена: `Получение токена <getting_token.rst>`_
+
+`Прокси-клиент </4_modules/modules/rest/authorization/proxy_access.rst>`_ для доступа к функциям модуля без получения нового токена.
 
 Сервисы с аутентификацией методом OAuth2
 ----------------------------------------
