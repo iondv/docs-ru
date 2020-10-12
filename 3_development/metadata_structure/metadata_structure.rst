@@ -12,10 +12,10 @@
 #. `Мета представлений </3_development/metadata_structure/meta_view/meta_view_main.rst>`_
 #. `Мета навигации </3_development/metadata_structure/meta_navigation/meta_navigation.rst>`_: `мета секций навигации </3_development/metadata_structure/meta_navigation/meta_nav_files/navigation_section.rst>`_, `мета узлов навигации </3_development/metadata_structure/meta_navigation/meta_nav_files/navigation_nodes.rst>`_.
 #. `Мета отчета </3_development/metadata_structure/meta_report/meta_report.rst>`_
-#. Мета админ
 #. `Мета бизнес-процессов </3_development/metadata_structure/meta_workflows/meta_workflows.rst>`_
-#. Геомета 
 #. `Мета безопасности </3_development/metadata_structure/meta_security/meta_security.rst>`_
+#. Мета админ
+#. Геомета 
 
 Структура основных типов меты
 -----------------------------
