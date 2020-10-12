@@ -145,6 +145,12 @@ JSON
      - `\ Теги <meta_view_attribute/tags.rst>`_
      - Массив строк
      - Хранит модификаторы отображения и стили для значений атрибутов. Расширенная спецификации свойства ``tags`` применяется в ``"options"``\ , но не является взаимозаменяемой.
+     
+     
+**Дополнительно:**
+
+* Представление ``Комментарий`` для атрибутов типа "Коллекция" - `подробнее </3_development/metadata_structure/meta_view/comments.rst>`_
+* Настройка ``"fileshare-list"`` и ``"fileshare"`` для управления документами - `подробнее </3_development/metadata_structure/meta_view/fileshare.rst>`_
 
 
 Структура в mongoDB (registry) для представлений списка
