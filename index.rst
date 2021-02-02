@@ -11,11 +11,11 @@
    :titlesonly:
    :hidden:
 
-   1_system_deployment/index
-   2_system_description/index
-   3_modules_description/index
-   4_ion_model/index
-   7_develop/index
+   1_general/about.rst
+   2_getting_started/quickstart.rst
+   3_development
+   4_modules/modules.rst
+   5_ion_model_project/index.rst
 
 .. role:: raw-html-m2r(raw)
    :format: html
