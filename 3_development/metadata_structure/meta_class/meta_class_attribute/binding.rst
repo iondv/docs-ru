@@ -1,5 +1,3 @@
-
-
 Основание коллекции
 ===================
 
@@ -18,7 +16,7 @@
 
 * ``searchRefs`` - в нем добавлен атрибут-строка ``code_binding`` в качестве обратной ссылки для ``binding``.
   
-  .. code-block::
+  .. code-block:: json
 
        {
          "orderNumber": 30,
@@ -53,7 +51,7 @@
 
 * ``backref_searchRefs`` - в этом классе используются атрибуты ``backref_searchRefs_binding`` и ``backref_searchRefs_text``. ``backref_searchRefs_binding`` является динамичной коллекцией, а ``backref_searchRefs_text`` используется в качестве фильтра для коллекции ``backref_searchRefs_binding``. Выборка в коллекцию ``backref_searchRefs_binding`` идет по равенству значений ``backref_searchRefs_text`` из класса ``backref_searchRefs`` и ``code_binding`` из класса ``searchRefs``. При добавлении объектов в коллекцию вручную автоматически заполняется атрибут ``code_binding``.
 
-.. code-block::
+.. code-block:: js
 
        {
          "orderNumber": 25,

@@ -1,5 +1,14 @@
 Быстрый запуск
-==================
+==============
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   quickstart/1_iondv_studio
+   quickstart/2_git_clone
+   quickstart/3_docker_container
+   quickstart/4_installer
 
 Начать знакомство с IONDV. Framework рекомендуем с быстрого запуска приложений.
 
@@ -7,10 +16,10 @@
 
 Развернуть приложения Вы можете следующими способами:
 
-* с помощью `IONDV. Studio <https://github.com/iondv/docs-ru/blob/ORG-405/2_getting_started/quickstart/1_iondv_studio.rst>`_
-* клонирование репозитория приложения и установка всех компонентов - `смотреть <https://github.com/iondv/docs-ru/blob/ORG-405/2_getting_started/quickstart/2_git_clone.rst>`_
-* с помощью `docker-контейнера <https://github.com/iondv/docs-ru/blob/ORG-405/2_getting_started/quickstart/3_docker_container.rst>`_ с собранными приложениями
-* с помощью `установщика <https://github.com/iondv/docs-ru/blob/ORG-405/2_getting_started/quickstart/4_installer.rst>`_ для операционной системы Linux
+* с помощью :doc:`IONDV. Studio <quickstart/1_iondv_studio>`
+* клонирование репозитория приложения и установка всех компонентов - :doc:`смотреть <quickstart/2_git_clone>`
+* с помощью :doc:`docker-контейнера <quickstart/3_docker_container>` с собранными приложениями
+* с помощью :doc:`установщика <quickstart/4_installer>` для операционной системы Linux
 
 
 Ссылки

@@ -3,7 +3,6 @@
 
 В папке содержатся скрипты запуска приложения, реализованного на IONDV. Framework, такие как:
 
-
 * `acl.js`_
 * `export.js`_
 * `import.js и import-data.js`_
@@ -23,15 +22,11 @@ acl.js
 
 Так же доступны команды для создания роли и прав для нее в системе, в случае если в приложении отсутствуют настройки в папке **acl**\ :
 
+* Настройка логина и пароль - ``node bin/adduser.js --name admin --pwd 123``
 
-* 
-  Настройка логина и пароль - ``node bin/adduser.js --name admin --pwd 123``
+* Настройка доступа - ``node bin/acl.js --u admin@local --role admin --p full``
 
-* 
-  Настройка доступа - ``node bin/acl.js --u admin@local --role admin --p full``
-
-* 
-  Права на генерацию токена для сервиса rest/token - ``node bin/acl.js --role admin --p USE --res ws:::gen-ws-token``
+* Права на генерацию токена для сервиса rest/token - ``node bin/acl.js --role admin --p USE --res ws:::gen-ws-token``
 
 .. code-block:: text
 

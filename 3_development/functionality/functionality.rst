@@ -1,7 +1,6 @@
 Функциональность
 ================
 
-
 **Функциональность приложения** - это набор возможностей (функций), которые реализуются отдельно и независимо от метаданных, но в рамках приложения.
 
 .. list-table::
@@ -9,27 +8,40 @@
 
    * - Наименование
      - Описание
-   * - `Шаблоны модулей <functionality_files/module_templates.rst>`_
+   * - :doc:`Шаблоны модулей <functionality_files/module_templates>`
      - Разделяются на системные и проектные шаблоны.
-   * - `Печатные формы <functionality_files/printed_forms.rst>`_
+   * - :doc:`Печатные формы <functionality_files/printed_forms>`
      - Передача форматирования в прописном виде.
-   * - `Задания по расписанию <functionality_files/schedule.rst>`_
+   * - :doc:`Задания по расписанию <functionality_files/schedule>`
      - Подсистемы запуска заданий по расписанию.
-   * - `Уведомления <functionality_files/notifications.rst>`_
+   * - :doc:`Уведомления <functionality_files/notifications>`
      - Лента новых уведомлений.
-   * - `Кеширование данных <functionality_files/cached.rst>`_
+   * - :doc:`Кеширование данных <functionality_files/cached>`
      - Кеширование данных обеспечивает быстрый доступ к запрашиваемой информации.
-   * - `Фильтры на форме <functionality_files/filter.rst>`_
+   * - :doc:`Фильтры на форме <functionality_files/filter>`
      - Запрос для фильтра на форме представления списка.
-   * - `Связь двух неймспейсов <functionality_files/namespace.rst>`_
+   * - :doc:`Связь двух неймспейсов <functionality_files/namespace>`
      - Для связывания двух проектов.
-   * - `ЭЦП <functionality_files/eds.rst>`_
+   * - :doc:`ЭЦП <functionality_files/eds>`
      - Электронно-цифровая подпись.
-   * - `Виртуальные атрибуты <functionality_files/virtual_attr.rst>`_
+   * - :doc:`Виртуальные атрибуты <functionality_files/virtual_attr>`
      - Специальный тип атрибутов, который позволяет выводить полный код и наименование класса.
-   * - `Утилиты <functionality_files/utilities.rst>`_
+   * - :doc:`Утилиты <functionality_files/utilities>`
      - Дополнительные программы для более специализированного применения
 
+.. toctree::
+   :hidden:
+   :titlesonly:
 
+   functionality_files/module_templates
+   functionality_files/printed_forms
+   functionality_files/schedule
+   functionality_files/notifications
+   functionality_files/cached
+   functionality_files/filter
+   functionality_files/namespace
+   functionality_files/eds
+   functionality_files/virtual_attr
+   functionality_files/utilities
 
 ----

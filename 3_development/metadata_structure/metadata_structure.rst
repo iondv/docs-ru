@@ -1,30 +1,35 @@
 Структура метаданных
 =====================
 
+.. toctree::
+   :titlesonly:
+   :hidden:
+   
+   meta_class/meta_class_main
+   meta_class/meta_class_attribute
+   correspondance_table
+   meta_variables
 
 **Метаданные (Мета)** - совокупность JSON-файлов в полной мере описывающих комплект структур, которыми оперирует приложение, способов отображения данных структур в пользовательском интерфейсе и навигации по ним, а так же файлов конфигурации приложения.   
 
 Типы файлов меты
 ----------------
 
-
-#. `Мета классов </3_development/metadata_structure/meta_class/meta_class_main.rst>`_
-#. `Мета представлений </3_development/metadata_structure/meta_view/meta_view_main.rst>`_
-#. `Мета навигации </3_development/metadata_structure/meta_navigation/meta_navigation.rst>`_: `мета секций навигации </3_development/metadata_structure/meta_navigation/meta_nav_files/navigation_section.rst>`_, `мета узлов навигации </3_development/metadata_structure/meta_navigation/meta_nav_files/navigation_nodes.rst>`_.
-#. `Мета отчета </3_development/metadata_structure/meta_report/meta_report.rst>`_
-#. `Мета бизнес-процессов </3_development/metadata_structure/meta_workflows/meta_workflows.rst>`_
-#. `Мета безопасности </3_development/metadata_structure/meta_security/meta_security.rst>`_
+#. :doc:`Мета классов </3_development/metadata_structure/meta_class/meta_class_main>`
+#. :doc:`Мета представлений </3_development/metadata_structure/meta_view/meta_view_main>`
+#. :doc:`Мета навигации </3_development/metadata_structure/meta_navigation/meta_navigation>`: :doc:`мета секций навигации </3_development/metadata_structure/meta_navigation/meta_nav_files/navigation_section>`, :doc:`мета узлов навигации </3_development/metadata_structure/meta_navigation/meta_nav_files/navigation_nodes>`.
+#. :doc:`Мета отчета </3_development/metadata_structure/meta_report/meta_report>`
+#. :doc:`Мета бизнес-процессов </3_development/metadata_structure/meta_workflows/meta_workflows>`
+#. :doc:`Мета безопасности </3_development/metadata_structure/meta_security/meta_security>`
 #. Мета админ
 #. Геомета 
 
 Структура основных типов меты
 -----------------------------
 
-
 .. image:: https://raw.githubusercontent.com/iondv/docs-ru/master/_static/images/schema.png
    :target: https://raw.githubusercontent.com/iondv/docs-ru/master/_static/images/schema.png
    :alt: shema
-
 
 Структуру основных типов меты можно представить следующим образом:
 
@@ -34,7 +39,7 @@
 
 **Мета представления (класса)** позволяет задавать желаемый состав атрибутов этого класса для отображения на форме, в соответствии с типом формы представления (представление формы списка ``list.json``\ , создания ``create.json``\ , изменения класса ``item.json``\ ) и указывать для каждого отдельного атрибута свойства, переопределяемые и (или) дополняемые свойства, задаваемые в мете класса для данного атрибута. 
 
-..
+.. code-block:: text
 
    Мета представления + Атрибуты класса = Отображение атрибутов на форме
 
@@ -48,9 +53,9 @@
 .. c   :header-rows: 1
 .. c  :widths: auto
 .. c
-.. c   * - :doc:`Мета класса <./meta_class/meta_class_main>`
-.. c     - :doc:`Мета представлений <./meta_view/meta_view_main>`
-.. c     - :doc:`Мета навигации <./meta_navigation/meta_navigation>`
+.. c   * - :doc:`Мета класса <meta_class/meta_class_main>`
+.. c     - :doc:`Мета представлений <meta_view/meta_view_main>`
+.. c     - :doc:`Мета навигации <meta_navigation/meta_navigation>`
 .. c   * - Находится в директории ``meta`` и состоит из наименования общей части
 .. c       меты класса + ``.class.json.``. Например: ``adress.class.json``.
 .. c     - В наименовании директории определяется к какому классу относится представление. Мета представлений располагается в директории ``views``\ , в которой содержатся директории, наименования которых совпадают с первой частью наименований файлов меты классов. Например: ``adress@project_name``\ , где  ``adress`` относится к классу ``adress``.

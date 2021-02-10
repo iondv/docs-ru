@@ -8,7 +8,7 @@
 
 *Пример применения для вычислямого атрибута*
 
-.. code-block::
+.. code-block:: js
 
    {
      "formula": {
@@ -40,14 +40,14 @@
            "$$now"
          ],
          "nestedConditions": []
-       }
+    }
 
 ``"dateEnd"`` меньше текущей даты/времени
 
 *Пример применения для вывода значения по умолчанию*
 в мете класса:
 
-.. code-block:: json
+.. code-block:: js
 
    ...
    "defaultValue": "$$now",
@@ -59,11 +59,11 @@
 Синтаксис форматирования дат в формате momentjs
 -----------------------------------------------
 
-.. code-block::
+.. code-block:: text
 
    'DD.MM.YYYY'
 
-.. code-block::
+.. code-block:: text
 
    NB: В драйвере к монгодб поддерживаются только основные возможности формата momentjs
 
@@ -77,15 +77,15 @@
 .. code-block:: json
 
    {
-   "property": "collectionAttr",
-   "operation": 10,
-   "nestedConditions": [
-      {
-         "property": "user",
-         "operation": 0,
-         "value": ["$$uid"]
-      }
-   ] 
+     "property": "collectionAttr",
+     "operation": 10,
+     "nestedConditions": [
+        {
+           "property": "user",
+           "operation": 0,
+           "value": ["$$uid"]
+        }
+     ] 
    }
 
 По ссылке атрибута типа "коллекция" отображаются только те объекты, у которых значение атрибута "user" совпадает со значением текущего пользователя.

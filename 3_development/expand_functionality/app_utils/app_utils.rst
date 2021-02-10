@@ -5,11 +5,12 @@
 
 Например - утилиты вызываемой задачи по расписанию или утилиты вызываемой при переходе в бизнес-процессе.
 
-Содержание
------------
+.. toctree::
+   :caption: Содержание
+   :titlesonly:
 
-* утилиты для `задач по расписанию <app_utils_files/jobs.rst>`_
-* утилиты для `бизнес-процесса <app_utils_files/workflow.rst>`_
-* утилиты для `кнопки действия <app_utils_files/button.rst>`_
-* утилиты для `веб-сервиса (модуль REST) <app_utils_files/rest.rst>`_
-* утилиты для `печатных форм <app_utils_files/print_forms.rst>`_
+   app_utils_files/button
+   app_utils_files/jobs
+   app_utils_files/print_forms
+   app_utils_files/rest
+   app_utils_files/workflow

@@ -10,7 +10,8 @@ IONDV. Studio
 бизнес-процессы, портальные формы), которые разворачиваются как веб-приложение IONDV. Framework.
 
 Как запустить приложение в Студии
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
+
 Смотрите `видео <https://www.youtube.com/watch?v=s7q9_YXkeEo>`_, о том, как развернуть в IONDV. Studio уже готовое приложение из репозитория.
 
 * Выберите пример готового приложения с github. Например, `Nutrition-Tickets <https: //github.com/iondv/nutrition-tickets>`_.
@@ -23,7 +24,8 @@ IONDV. Studio
 Приложение в демо-Студии хранится в течение 1-го часа, Вы можете ознакомиться с технологией и попробовать самостоятельно внести изменения в структуру приложение и увидеть результат. После этого приложение будет удалено с сервера.
 
 Как создать приложение в студии
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
+
 В Студии также можно создавать приложения.
 Смотрите `видео <https://www.youtube.com/watch?v=e201ko9fkQ8&t=331s>`_ о создании простого приложения `IONDV. Nutrition-tickets <https://github.com/iondv/nutrition-tickets>`_ в **IONDV. Studio**. Инструкция доступна в репозитории `IONDV. Nutrition-Tickets <https://github.com/iondv/nutrition-tickets/blob/master/tutorial/ru/index.md>`_.
 
@@ -33,19 +35,19 @@ IONDV. Studio
 
 * Появляется боковое меню - это рабочая панель приложения. Раздел Классы нужен для создания Классов и Атрибутов. 
 
-* Создание приложения начинается с Класса. Нажимаем на Класс и в рабочем пространстве нажимаем `+Класс`. В всплывающем окне заполняем обязательные поля. Описание полей `тут <https://github.com/iondv/framework/blob/master/docs/ru/2_system_description/metadata_structure/meta_class/meta_class_main.md>`_.
+* Создание приложения начинается с Класса. Нажимаем на Класс и в рабочем пространстве нажимаем `+Класс`. В всплывающем окне заполняем обязательные поля. Описание полей :doc:`тут <../../3_development/metadata_structure/meta_class/meta_class_main>`.
 
 * У нас появился Класс и автоматически создался Атрибут ID. 
 
-* Когда Класс выделен, можно добавить к нему Атрибуты, нажав на +Атрибут. Описание свойств и типов Атрибута `тут <https://github.com/iondv/framework/blob/master/docs/ru/2_system_description/metadata_structure/meta_class/meta_class_attribute.md>`_.
+* Когда Класс выделен, можно добавить к нему Атрибуты, нажав на +Атрибут. Описание свойств и типов Атрибута :doc:`тут <../../3_development/metadata_structure/meta_class/meta_class_attribute>`.
 
-* Когда у вас есть минимум 2 Класса, можно настроить между ними связи. Это выполняется через настройку типа данных при создании атрибута Класса. Основные типы - `Коллекция <https://github.com/iondv/framework/blob/master/docs/ru/2_system_description/metadata_structure/meta_class/atr_itemclass_backcoll.md>`_ и `Ссылка <https://github.com/iondv/framework/blob/master/docs/ru/2_system_description/metadata_structure/meta_class/atr_ref_backref.md>`_. Заданный тип данных у Атрибута отразится в рабочей области в виде связующей линии. 
+* Когда у вас есть минимум 2 Класса, можно настроить между ними связи. Это выполняется через настройку типа данных при создании атрибута Класса. Основные типы - :doc:`Коллекция <../../3_development/metadata_structure/meta_class/meta_class_attribute/attr_itemclass_backcoll>` и :doc:`Ссылка <../../3_development/metadata_structure/meta_class/meta_class_attribute/attr_ref_backref>`. Заданный тип данных у Атрибута отразится в рабочей области в виде связующей линии. 
 
 В разделе Класс появятся созданные вами Классы и их Атрибуты - это называется дерево проекта, по которому будет легко ориентироваться, когда количество Классов приложения увеличится. 
 Это - базовые пункты для создания приложения. 
 
 Приложение в IONDV. Studio
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Для того чтобы разработать приложение в Студии, нужно предварительно запустить ее одним из следующих способов:
 
@@ -64,10 +66,13 @@ IONDV. Studio
 * Скачайте последнюю версию IONDV. Framework и модуля IONDV. Registry module - получить их можно c репозиториев GitHub `Framework <https://github.com/iondv/framework>`_ и `Registry <https://github.com/iondv/registry>`_.
 * Следуйте типовой инструкции развертывания приложения из git, за исключением приложения - вместо приложения разверните в папку applictions ваш архив с приложением.
 * Далее необходимо собрать и развернуть приложение, согласно инструкции `IONDV. Framework <https://github.com/iondv/framework>`_.
+
 Варианты использования Студии
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------
+
 Отдельное приложение node.js
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Преимуществами использования отдельного приложения является отсутствие необходимости в базе данных и в IONDV. Framework.
 
 * Выполните команду `git clone https://github.com/iondv/studio.git`. Имените локальную дирректорию на `studio`. 
@@ -76,13 +81,14 @@ IONDV. Studio
 * Выполните команду `gulp build` для сборки приложения.
 * Запустите приложение командой `npm start` или `node www` (`node standalone` для запуска приложения как [standalone](/readme-standalone_ru.md).)
 * Перейдите в браузере по адресу  `http://localhost:8888`.
+
 Десктоп приложение Студии (node-webkit)
-------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Перед формированием десктоп приложения Студии, соберите *Отдельное приложение node.js*
 
 Запуск новой студии на локальном сервере node-webkit
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Скачайте последнюю **NORMAL** версию node-webkit c сайта **https://nwjs.io/**.
 2. Распакуйте содержимое архива в любую удобную папку.
@@ -97,7 +103,7 @@ IONDV. Studio
 помощью nw.exe файла (название может отличаться).
 
 Формирование одного единственного исполняемого файла
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Скачайте **Enigma virtual box** с сайта **https://enigmaprotector.com/en/downloads.html**, установите и запустите
 2. Занесите в первое поле путь к исполняемому файлу вашего приложения. (Можно выбрать)
@@ -107,11 +113,11 @@ IONDV. Studio
 6. Нажмите Process и дождитесь результата.
 
 External App Tracker
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 Вся настройка в deploy.json -> globals -> externalAppTracker
 
-::
+.. code-block:: js
  
     {
       "items": [{
@@ -136,8 +142,6 @@ External App Tracker
       "updateInterval": 86400
     }
     
-    
-    
 - item.name - задает имя файла при сохранении архива
 - item.title - отображается на клиенте при выборе приложения
 - item.url - удаленный адрес архива приложения
@@ -153,11 +157,11 @@ External App Tracker
 На клиенте можно указать custom URL, но нужно иметь в виду, что браузер разрешает загрузки с чужих хостов только явно разрешенные через Access-Control-Allow-Origin
 
 Оригинальная инструкция на английском представлена на сайте 
-**https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps** в пункте 
+https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps в пункте 
 **An alternative way to make an executable file in Windows**
 
 Ссылки
-~~~~~~~~~
+~~~~~~
 
 * `Репозиторий приложения <https://github.com/iondv/studio.git>`_
 * `Node-webkit <https://nwjs.io/>`_
@@ -165,6 +169,6 @@ External App Tracker
 * `Пакет для формирования исполняемого файла <https://github.com/nwjs-community/nw-builder>`_
 * `Программа для линковки dll <https://enigmaprotector.com/en/downloads.html>`_
 * `Руководство пользователя <manuals/RP_studio.docx>`_
-* Запуск приложения как `standalone </readme-standalone_ru.md>`_
+* `Запуск приложения как standalone </readme-standalone_ru.md>`_
 * `Инструкция по созданию ИС при помощи ION. Studio <https://github.com/iondv/nutrition-tickets/blob/master/tutorial/ru/index.md>`_
 

@@ -1,14 +1,31 @@
-
-
 Мета классов - атрибутивная часть
 =================================
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+   
+   property_types
+   meta_class_attribute/attr_autoassigned
+   meta_class_attribute/attr_cached_true
+   meta_class_attribute/attr_default_value
+   meta_class_attribute/attr_formula
+   meta_class_attribute/attr_indexed
+   meta_class_attribute/attr_itemclass_backcoll
+   meta_class_attribute/attr_ref_backref
+   meta_class_attribute/attr_selconditions
+   meta_class_attribute/attr_selectionprovider
+   meta_class_attribute/attr_selsorting
+   meta_class_attribute/binding
+   meta_class_attribute/eagerloading
+   meta_class_attribute/semantic
 
 **Атрибутивная часть меты класса** описывает поля атрибута класса. Атрибутов в классе обычно минимум два - ключевое поле и поле данных. Они содержатся в виде массива в поле ``"properties"`` основной части меты классов. Каждый атрибут - это объект следующей структуры:
 
 JSON
 ----
 
-.. code-block::
+.. code-block:: json
 
        {
          "orderNumber": 20,
@@ -66,7 +83,7 @@ JSON
    * - ``"type"``
      - **Тип**
      - Целое - идентификатор (код) типа
-     - Тип данных атрибута. См. `Типы атрибутов </3_development/metadata_structure/meta_class/property_types.rst>`_
+     - Тип данных атрибута. См. :doc:`Типы атрибутов </3_development/metadata_structure/meta_class/property_types>`
    * - ``"size"``
      - **Размер**
      - Целое положительное
@@ -92,7 +109,7 @@ JSON
      - Логический
      - Разрешает или запрещает изменять значение атрибута.
    * - ``"indexed"``
-     - `Индексация для поиска <meta_class_attribute/attr_indexed.rst>`_
+     - :doc:`Индексация для поиска <meta_class_attribute/attr_indexed>`
      - Логический
      - Указывает, нужно ли индексировать значения данного атрибута для ускорения поиска.
    * - ``"unique"``
@@ -100,7 +117,7 @@ JSON
      - Логический
      - Для атрибута накладывает ограничение уникальности (\ **Внимание**\ : нельзя создать два объекта класса с одинаковыми значениями в уникальном атрибуте).
    * - ``"autoassigned"``
-     - `Автозаполнение <meta_class_attribute/attr_autoassigned.rst>`_
+     - :doc:`Автозаполнение <meta_class_attribute/attr_autoassigned>`
      - Логический
      - Разрешает или запрещает автоматическое заполнение поля приложением.
    * - ``"hint"``
@@ -108,63 +125,60 @@ JSON
      - Строка
      - Задает сообщение, которые выведется в пользовательском интерфейсе рядом с именем атрибута.
    * - ``"defaultValue"``
-     - `Значение по умолчанию <meta_class_attribute/attr_default_value.rst>`_
+     - :doc:`Значение по умолчанию <meta_class_attribute/attr_default_value>`
      - Зависит от типа атрибута
      - Указывается значение, которое будет заполнено в атрибуте в форме создания (при создании объекта).
    * - ``"refClass"``
-     - `Атрибут ссылки <meta_class_attribute/attr_ref_backref.rst>`_
+     - :doc:`Атрибут ссылки <meta_class_attribute/attr_ref_backref>`
      - Строка, только латиница, без пробелов
      - Содержит значение поля ``"name"`` (Системное имя) класса, который должен использоваться в атрибуте типа "Ссылка [13]".
    * - ``"itemsClass"``
-     - `Атрибут коллекции <meta_class_attribute/attr_itemclass_backcoll.rst>`_
+     - :doc:`Атрибут коллекции <meta_class_attribute/attr_itemclass_backcoll>`
      - Строка, только латиница без пробелов
      - Содержит значение поля ``"name"`` (Системное имя) класса, объекты которого могут привязаться к атрибуту типа "Коллекция [14]"
    * - ``"backRef"``
-     - `Атрибут обратной ссылки <meta_class_attribute/attr_ref_backref.rst>`_
+     - :doc:`Атрибут обратной ссылки <meta_class_attribute/attr_ref_backref>`
      - Строка, только латиница без пробелов
      - Указывается атрибут типа "Ссылка [13]", из класса, указанного в свойстве Класс коллекции, который ссылается на исходный класс. Нужно для фильтрации и привязки объектов из класса Класс коллекции по значению ссылочного атрибута.
    * - ``"backColl"``
-     - `Атрибут обратной коллекции <meta_class_attribute/attr_itemclass_backcoll.rst>`_
+     - :doc:`Атрибут обратной коллекции <meta_class_attribute/attr_itemclass_backcoll>`
      - Строка, только латиница без пробелов
      - Указывается атрибут типа "Коллекция [14]", из класса, указанного в свойстве Класс коллекции, который ссылается на исходный класс. Нужно для фильтрации и привязки объектов из класса Класс коллекции по значению ссылочного атрибута.
    * - ``"binding"``
-     - `Основание коллекции <meta_class_attribute/binding.rst>`_
+     - :doc:`Основание коллекции <meta_class_attribute/binding>`
      - Строка, только латиница без пробелов
      - Указывается атрибут класса, к которому привязывается атрибут обратной ссылки. Если не указан, то принимается ключевой атрибут.
    * - ``"semantic"``
-     - `Семантика <meta_class_attribute/semantic.rst>`_
+     - :doc:`Семантика <meta_class_attribute/semantic>`
      - Строка
      - Указывается для ссылочных атрибутов для того, чтобы выводить и формировать информацию из ссылочного класса, корректную для описания артибута в объекте исходного класса.
    * - ``"selConditions"``
-     - `Условия отбора допустимых значений <meta_class_attribute/attr_selconditions.rst>`_
+     - :doc:`Условия отбора допустимых значений <meta_class_attribute/attr_selconditions>`
      - Null либо массив объектов
      - Позволяет ограничить выбор объектов по ссылке, допустимых для привязкки в данном ссылочном атрибуте.
    * - ``"selSorting"``
-     - `Сортировка выборки допустимых значений <meta_class_attribute/attr_selsorting.rst>`_
+     - :doc:`Сортировка выборки допустимых значений <meta_class_attribute/attr_selsorting>`
      - Null либо массив объектов
      - Позволяет сортировать выбор объектов по ссылке, допустимых для привязкки в данном ссылочном атрибуте.
    * - ``"selectionProvider"``
-     - `Список выбора допустимых значений <meta_class_attribute/attr_selectionprovider.rst>`_
+     - :doc:`Список выбора допустимых значений <meta_class_attribute/attr_selectionprovider>`
      - Null либо объект
      - Задает список выбора допустимых значений для атрибута.
    * - ``"indexSearch"``
      - **Полнотекстовый поиск**
      - Логический
-     - Признак использования атрибута в полнотекстовом поиске. Указывает, что значение данного атрибута должно индексироваться поисковой системой. См. `Индексация <atr_indexed.md>`_
+     - Признак использования атрибута в полнотекстовом поиске. Указывает, что значение данного атрибута должно индексироваться поисковой системой. См. :doc:`Индексация <meta_class_attribute/attr_indexed>`
    * - ``"eagerLoading"``
-     - `Жадная загрузка <meta_class_attribute/eagerloading.rst>`_
+     - :doc:`Жадная загрузка <meta_class_attribute/eagerloading>`
      - Логический
      - Загрузка достаточного объема данных объекта по ссылке (для атрибутов типа ссылка и коллекция).
    * - ``"formula"``
-     - `Вычисляемые поля <meta_class_attribute/attr_formula.rst>`_
+     - :doc:`Вычисляемые поля <meta_class_attribute/attr_formula>`
      - Null либо объект
      - Указывает на формулу расчета.
    * - ``"cached"``
-     - `Кеширование значения вычислимого атрибута <meta_class_attribute/attr_cached_true.rst>`_
+     - :doc:`Кеширование значения вычислимого атрибута <meta_class_attribute/attr_cached_true>`
      - Логический
      - Применяется только для значений атрибута, полученных с помощью вычисления по формуле. Указывает на возможность кеширования значения вычислимого атрибута.
 
-
-
 ----
-
