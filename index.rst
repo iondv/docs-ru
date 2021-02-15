@@ -13,10 +13,10 @@
    1_general/about
    2_getting_started/index
    3_development/index
+   key_features
    
 4_modules/modules
 5_ion_model_project/index
-key_features
 
 .. role:: raw-html-m2r(raw)
    :format: html
@@ -319,7 +319,7 @@ Docker
 ----
 
 `License <https://github.com/iondv/framework/blob/master/LICENSE>`_                              `Contact us <https://iondv.com/portal/contacts>`_                              `English <https://iondv.readthedocs.io/en/latest/index.html>`_
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016-2020 **LLC "ION DV"**.\ :raw-html-m2r:`<br>`
 All rights reserved.

@@ -7,6 +7,12 @@
    
    meta_class/meta_class_main
    meta_class/meta_class_attribute
+   meta_navigation/meta_navigation
+   meta_report/meta_report
+   meta_security/meta_security
+   meta_view/meta_view_main
+   meta_view/meta_view_attribute
+   meta_workflows/meta_workflows
    correspondance_table
    meta_variables
 

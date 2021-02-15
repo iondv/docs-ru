@@ -2,9 +2,9 @@
 =====================
 
 JSON
-^^^^
+----
 
-.. code-block::
+.. code-block:: json
 
    {
      "caption": "Простые типы",
@@ -14,7 +14,7 @@ JSON
    }
 
 Описание полей
---------------
+~~~~~~~~~~~~~~
 
 .. list-table::
    :header-rows: 1
@@ -56,7 +56,7 @@ JSON
 Структура в mongoDB (registry)
 ------------------------------
 
-.. code-block::
+.. code-block:: json
 
    {
        "_id" : ObjectId("578f07aa0ce0024ce143e720"),

@@ -14,7 +14,7 @@
 
 **Класс-структура:**
 
-.. code-block::
+.. code-block:: json
 
    {
      "isStruct": true,
@@ -183,7 +183,7 @@
 
 **Класс с атрибутом типа "Структура [16]"**
 
-.. code-block::
+.. code-block:: json
 
    {
      "isStruct": false,
@@ -265,7 +265,7 @@
 
 Объект класса с атрибутом-структурой в базе:
 
-.. code-block::
+.. code-block:: json
 
    {
        "_id" : ObjectId("57c3e46fd53ecd50123cc4f5"),

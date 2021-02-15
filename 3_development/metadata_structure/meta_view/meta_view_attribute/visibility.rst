@@ -11,7 +11,6 @@
 Синтаксис
 ---------
 
-
 * 
   Символ ``\u003d`` обозначает операцию ``=``
 
@@ -19,29 +18,28 @@
   Символ ``\u0027`` обозначает операцию ``'``
 
   
-  .. code-block::
+  .. code-block:: js
 
-     "visibility": ".visibility_condition_base !\u003d \u0027\u0027",
+     "visibility": ".visibility_condition_base !\u003d \u0027\u0027"
 
   Данные символы нужны для корректного отображения условий в формате .json
 
 Типы условий
-^^^^^^^^^^^^
-
+------------
 
 * Сложные условия:  
   
-  .. code-block::
+  .. code-block:: text
 
      ".state == 'work' || .state == 'result' || .state == 'fin'"
+
   где идет проверка по трём условиям с объединением ``ИЛИ`` (для условия ``И`` применяется знак ``&``\ ).
   
   Сам синтаксис настройки похож на условия в js.  
 
-
 * Логический:
 
-.. code-block::
+.. code-block:: text
 
    ".archive == true"
 
@@ -50,16 +48,15 @@
 
 * Простое условие:
 
-.. code-block::
+.. code-block:: text
 
    ".state == 'work'"
 
 где идет проверка по значению атрибута со списком выбора.
 
-
 * Числовое условие:
 
-.. code-block::
+.. code-block:: text
 
    ".magistral == 1"
 
@@ -68,25 +65,26 @@
 
 * Пусто:
 
-.. code-block::
+.. code-block:: text
 
    ".meeting == ''"
 
 
 * Не пусто:
 
-.. code-block::
+.. code-block:: text
 
    "!! .meeting"
 
 где идет проверка - есть ли значение в указанном атрибуте.
 
 Пример в JSON:
-^^^^^^^^^^^^^^
+--------------
 
-.. code-block::
+.. code-block:: json
 
    {
+     {
              "caption": "Основание для условия отображения",
              "type": 1,
              "property": "visibility_condition_base",
@@ -110,7 +108,7 @@
              "hint": null,
              "historyDisplayMode": 0,
              "tags": null
-           },
+      },
       {
              "caption": "Поле отобразится, если основание заполнено",
              "type": 1,
@@ -135,8 +133,8 @@
              "hint": null,
              "historyDisplayMode": 0,
              "tags": null
-           },
-           {
+      },
+      {
              "caption": "Поле отобразится, если в основании \u00271\u0027",
              "type": 1,
              "property": "visiility_condition_1",
@@ -160,7 +158,8 @@
              "hint": null,
              "historyDisplayMode": 0,
              "tags": null
-           }
+      }
+	}
 
 
 

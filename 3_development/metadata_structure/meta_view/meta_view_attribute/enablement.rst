@@ -5,14 +5,15 @@
 --------
 
 **Условия активности** - задают условия активности, то есть доступности  поля для редактирования в представлении.
-Синтаксис условий такой же, как в `условиях отображения <visibility.rst>`_.
+Синтаксис условий такой же, как в :doc:`условиях отображения <visibility>`.
 
 Пример в JSON:
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
-.. code-block::
+.. code-block:: json
 
    {
+     {
              "caption": "Основание для условия активности",
              "type": 1,
              "property": "enablement_condition_base",
@@ -36,8 +37,8 @@
              "hint": null,
              "historyDisplayMode": 0,
              "tags": null
-           },
-   {
+     },
+     {
              "caption": "Поле активно, если основание заполнено",
              "type": 1,
              "property": "enablement_condition_use",
@@ -61,8 +62,8 @@
              "hint": null,
              "historyDisplayMode": 0,
              "tags": null
-           },
-           {
+     },
+     {
              "caption": "Поле активно, если в основании \u00271\u0027",
              "type": 1,
              "property": "enablement_condition_1",
@@ -86,8 +87,8 @@
              "hint": null,
              "historyDisplayMode": 0,
              "tags": null
-           }
-
+     }
+   }
 
 
 ----

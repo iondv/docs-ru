@@ -4,7 +4,7 @@
 JSON
 ----
 
-.. code-block::
+.. code-block:: js
 
    {
      "code": "classDatetime",
@@ -135,7 +135,7 @@ JSON
 Настройка поиска в узле навигации
 ---------------------------------
 
-.. code-block::
+.. code-block:: js
 
       "searchOptions": {
        "person": {
@@ -148,12 +148,12 @@ JSON
          "mode": ["starts", "starts", "starts"], // режимы сопоставления - в данном случае "начинается с" (доступны like, contains, starts, ends)
          "joinBy": "and" // режим объединения условий на атрибуты (по умолчанию or)
        }
-     }
+      }
 
 Структура в mongoDB (registry)
 ------------------------------
 
-.. code-block::
+.. code-block:: json
 
    {
        "_id" : ObjectId("578f07aa0ce0024ce143e71e"),

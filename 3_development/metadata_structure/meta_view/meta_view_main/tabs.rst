@@ -26,9 +26,9 @@
 где, ``caption`` - наименование вкладки и ``fullFields`` - атрибуты на вкладке
 
 Пример
-^^^^^^
+------
 
-.. code-block::
+.. code-block:: text
 
    {
      "tabs": [
@@ -85,6 +85,6 @@
              "historyDisplayMode": 0,
              "tags": null
            }
-         ],
+         ]
 
 ----

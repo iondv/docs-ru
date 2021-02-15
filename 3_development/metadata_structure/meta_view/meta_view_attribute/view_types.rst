@@ -3,7 +3,7 @@
 
 **Типы представлений** - это следующие константы в платформе: 
 
-.. code-block::
+.. code-block:: js
 
    module.exports = {
      GROUP: 0,
@@ -31,7 +31,7 @@
      CALENDAR: 220
    };
 
-**NB:** подробнее см. `таблицу соответствий </3_development/metadata_structure/correspondance_table.rst>`_.
+**NB:** подробнее см. :doc:`таблицу соответствий </3_development/metadata_structure/correspondance_table>`.
 
 .. list-table::
    :header-rows: 1
@@ -40,22 +40,22 @@
      - Наименование
      - Описание
    * - 0
-     - `\ Группа <view_types/type_group.rst>`_
+     - :doc:`\ Группа <view_types/type_group>`
      - Особая структура представлений создания и изменения. 
    * - 1
      - Строковое
      - Представление для текстовых данных или приведение к текстовому виду. Настроен trim - т.е. отбрасывание пробелов с начала и конца строки                                                                                                   
    * - 2
-     - `\ Ссылка <view_types/type_coll_ref.rst>`_
+     - :doc:`\ Ссылка <view_types/type_coll_ref>`
      - Для ссылочных полей, связь 1кN. Позволяет задавать возможные операции над объектами класса, на который ссылаемся.
    * - 3
-     - `\ Коллекция <view_types/type_coll_ref.rst>`_
+     - :doc:`\ Коллекция <view_types/type_coll_ref>`
      - Для коллекций, связь Nк1. Позволяет задавать возможные операции над объектами класса, на который ссылаемся.
    * - 4
      - Флаг
      - Чекбокс для логического типа.
    * - 5
-     - `\ Выпадающий список </3_development/metadata_structure/meta_class/meta_class_attribute/attr_selectionprovider.rst>`_
+     - :doc:`\ Выпадающий список </3_development/metadata_structure/meta_class/meta_class_attribute/attr_selectionprovider>`
      - Для имеющих заданное поле ``selectionProvider``.
    * - 7
      - Многострочный текст
@@ -91,16 +91,16 @@
      - Выбор периода
      - Представление позволяющее вести две даты - границы периода.
    * - 100
-     - `\ Геоданные </3_development/metadata_structure/meta_class/property_types/type_geodata100.rst>`_
+     - :doc:`\ Геоданные </3_development/metadata_structure/meta_class/property_types/type_geodata100>`
      - Задает представление для типа "Геоданные [100]".
    * - 110
      - Набор файлов
      - Представление для выбора и загрузки нескольких файлов. Контролирует что файлы принадлежат к одному из указанных в мете атрибута типов, общий размер файлов и количество.
    * - 210
-     - `\ Расписание </3_development/metadata_structure/meta_class/property_types/type_schedule210.rst>`_
+     - :doc:`\ Расписание </3_development/metadata_structure/meta_class/property_types/type_schedule210>`
      - Представление для типа атрибута "Расписание [210]",  позволяет задать расписание, отображение в табличном виде.
    * - 220
-     - `\ Календарь </3_development/metadata_structure/meta_class/property_types/type_schedule210.rst>`_
+     - :doc:`\ Календарь </3_development/metadata_structure/meta_class/property_types/type_schedule210>`
      - Представление для типа атрибута "Расписание [210]",  позволяет задать календарь, отображение в виде календаря.
 
 

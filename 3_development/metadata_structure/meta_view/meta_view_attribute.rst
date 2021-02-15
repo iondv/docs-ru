@@ -1,7 +1,22 @@
-
-
 Мета представлений - атрибутивная часть
 =======================================
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+   
+   meta_view_attribute/commands
+   meta_view_attribute/enablement
+   meta_view_attribute/field_sizes
+   meta_view_attribute/fields
+   meta_view_attribute/mask
+   meta_view_attribute/obligation
+   meta_view_attribute/options
+   meta_view_attribute/tags
+   meta_view_attribute/type_coll_ref
+   meta_view_attribute/type_group
+   meta_view_attribute/view_types
+   meta_view_attribute/visibility
 
 Описание
 --------
@@ -11,7 +26,7 @@
 JSON
 ----
 
-.. code-block::
+.. code-block:: json
 
        {
          "caption": "Редактор целых чисел [14]",
@@ -58,7 +73,7 @@ JSON
      - Строка
      - Заголовок поля ввода/колонки атрибута отображаемый в представлениях.
    * - ``"type"``
-     - `\ Тип <meta_view_attribute/view_types.rst>`_
+     - :doc:`\ Тип <meta_view_attribute/view_types>`
      - Целое - идентификатор (код) типа
      - Тип представления атрибута.
    * - ``"property"``
@@ -68,21 +83,21 @@ JSON
    * - ``"size"``
      - **Размер**
      - Целое - код размера поля ввода, типозависимо
-     - Позволяет указать код размера поля для разных типов атрибута/представления. Константы в платформе `FieldSizes <meta_view_attribute/field_sizes.rst>`_.
+     - Позволяет указать код размера поля для разных типов атрибута/представления. Константы в платформе :doc:`FieldSizes <meta_view_attribute/field_sizes>`.
    * - ``"maskName"``
      - **Имя маски**
      - Строка
      - При наличии в платформе предустановленных масок - можно задать маску по внутреннему имени, указав его в данном поле.
    * - ``"mask"``
-     - `\ Маска <meta_view_attribute/mask.rst>`_
+     - :doc:`\ Маска <meta_view_attribute/mask>`
      - Строка
      - Позволяет предопределять формат вводимого значения для атрибута.
    * - ``"mode"``
      - **Режим отображения**
      - Целое - код режима отображения
-     - В ряде случаев бывает необходимо отображать данные атрибута по разному, как отображать - указывается в этом поле. `Пример использования </3_development/metadata_structure/meta_class/property_types/type_geodata100.rst>`_.
+     - В ряде случаев бывает необходимо отображать данные атрибута по разному, как отображать - указывается в этом поле. :doc:`Пример использования </3_development/metadata_structure/meta_class/property_types/type_geodata100>`.
    * - ``"fields"``
-     - `\ Поля <meta_view_attribute/fields.rst>`_
+     - :doc:`\ Поля <meta_view_attribute/fields>`
      - Массив объектов
      - Позволяет сформировать представление создания/изменения особым образом.
    * - ``"hierarchyAttributes"``
@@ -98,7 +113,7 @@ JSON
      - Целое или Null
      - *не используется в текущей версии*
    * - ``"commands"``
-     - `\ Действия <meta_view_attribute/commands.rst>`_
+     - :doc:`\ Действия <meta_view_attribute/commands>`
      - Массив объектов либо Null
      - Описывает допустимые действия (групповые действия) над объектами ссылочного поля. Null для дефолтного набора действий.
    * - ``"orderNumber"``
@@ -110,15 +125,15 @@ JSON
      - Логическое
      - Определяет обязательно ли заполнение данного атрибута при создании/изменении объекта.
    * - ``"visibility"``
-     - `\ Условия отображения <meta_view_attribute/visibility.rst>`_
+     - :doc:`\ Условия отображения <meta_view_attribute/visibility>`
      - Строка
      - Задает условие отображения поля в представлении.
    * - ``"enablement"``
-     - `\ Условия активности <meta_view_attribute/enablement.rst>`_
+     - :doc:`\ Условия активности <meta_view_attribute/enablement>`
      - Строка
      - Задает условие активности (доступности для редактирования) поля в представлении с форматом, аналогичным условиям отображения.
    * - ``"obligation"``
-     - `\ Условия обязательности <meta_view_attribute/obligation.rst>`_
+     - :doc:`\ Условия обязательности <meta_view_attribute/obligation>`
      - Строка
      - Задает условие обязательности заполнения поля в представлении с форматом, аналогичным условиям отображения.
    * - ``"readonly"``
@@ -142,21 +157,21 @@ JSON
      - Целое
      - Указывает формат отображения истории изменения объектов.
    * - ``"tags"``
-     - `\ Теги <meta_view_attribute/tags.rst>`_
+     - :doc:`\ Теги <meta_view_attribute/tags>`
      - Массив строк
      - Хранит модификаторы отображения и стили для значений атрибутов. Расширенная спецификации свойства ``tags`` применяется в ``"options"``\ , но не является взаимозаменяемой.
      
      
 **Дополнительно:**
 
-* Представление ``Комментарий`` для атрибутов типа "Коллекция" - `подробнее </3_development/metadata_structure/meta_view/comments.rst>`_
-* Настройка ``"fileshare-list"`` и ``"fileshare"`` для управления документами - `подробнее </3_development/metadata_structure/meta_view/fileshare.rst>`_
+* Представление ``Комментарий`` для атрибутов типа "Коллекция" - :doc:`подробнее </3_development/metadata_structure/meta_view/comments>`
+* Настройка ``"fileshare-list"`` и ``"fileshare"`` для управления документами - :doc:`подробнее </3_development/metadata_structure/meta_view/fileshare>`
 
 
 Структура в mongoDB (registry) для представлений списка
 -------------------------------------------------------
 
-.. code-block::
+.. code-block:: json
 
           {
                "sorted" : true,

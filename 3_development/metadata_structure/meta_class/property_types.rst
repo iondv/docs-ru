@@ -1,6 +1,18 @@
 Типы атрибутов
 ==============
 
+.. toctree::
+   :hidden:
+   :titlesonly:
+   
+   property_types/type_collection14
+   property_types/type_datetime9
+   property_types/type_geodata100
+   property_types/type_isstruct16
+   property_types/type_reference13
+   property_types/type_schedule210
+   property_types/type_user17
+
 **Тип атрибута** - указывает на тип поддерживаемых атрибутом данных, как например размер допустимых значений и другие.
 
 .. list-table::

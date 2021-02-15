@@ -5,6 +5,15 @@
    :titlesonly:
    :hidden:
    
+   meta_class_main/abstract
+   meta_class_main/ancestor
+   meta_class_main/composite_indexes
+   meta_class_main/journaling
+   meta_class_main/key
+   meta_class_main/metaversion
+   meta_class_main/semantic
+   meta_class_main/time_user_tracker
+   meta_class_main/type_isstruct16
    isstruct
 
 **Общая часть меты классов** - содержит поля параметров класса, которые имеют отношения к самой структуре и способам оперирования данными в ней.

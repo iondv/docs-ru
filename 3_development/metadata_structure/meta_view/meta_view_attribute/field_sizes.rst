@@ -1,8 +1,7 @@
 Размеры полей
 =============
 
-.. code-block::
-
+.. code-block:: js
 
    module.exports = {
      TINY: 0,
