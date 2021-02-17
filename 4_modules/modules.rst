@@ -1,5 +1,20 @@
-Модули
-======
+4. Модули
+=========
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+   
+   modules/registry/registry
+   modules/report/report
+   modules/gantt-chart
+   modules/portal
+   modules/dashboard
+   modules/admin/admin
+   modules/account
+   modules/soap
+   modules/image_storage
+   modules/rest/rest
 
 **Модули** - это независимые блоки с обязательной или дополнительной функциональностью, структура которых подчиняется определенным правилам. 
 
@@ -8,25 +23,25 @@
 
    * - Наименование
      - Описание
-   * - `\ Registry </4_modules/modules/registry/registry.rst>`_
+   * - :doc:`\ Registry <modules/registry/registry>`
      - Ключевой модуль предназначенный непосредственно для работы с данными на основе структур метаданных.
-   * - `\ Report </4_modules/modules/report/report.rst>`_
+   * - :doc:`\ Report <modules/report/report>`
      - Модуль предназначенный для формирования аналитических отчетов.
-   * - `\ Gantt-chart </4_modules/modules/gantt-chart.rst>`_
+   * - :doc:`\ Gantt-chart <modules/gantt-chart>`
      - Модуль для вывода данных с датами.
-   * - `\ Portal </4_modules/modules/portal.rst>`_
+   * - :doc:`\ Portal <modules/portal>`
      - Модуль для вывода произвольных шаблонов данных.
-   * - `\ Dashboard </4_modules/modules/dashboard.rst>`_
+   * - :doc:`\ Dashboard <modules/dashboard>`
      - Модуль предназначенный для выведения краткой информации в виде блоков.
-   * - `\ Ionadmin </4_modules/modules/admin/admin.rst>`_
+   * - :doc:`\ Ionadmin <modules/admin/admin>`
      - Модуль администрирования для назначения прав.
-   * - `\ Account </4_modules/modules/account.rst>`_
+   * - :doc:`\ Account <modules/account>`
      - Модуль личного кабинета, который формирует логику отображения.
-   * - `\ Soap </4_modules/modules/soap.rst>`_
+   * - :doc:`\ Soap <modules/soap>`
      - Модуль запросов к сервисам.
-   * - `\ Image-storage </4_modules/modules/image_storage.rst>`_
+   * - :doc:`\ Image-storage <modules/image_storage>`
      - Модуль предварительного просмотра картинок.
-   * - `\ REST </4_modules/modules/rest/rest.rst>`_
+   * - :doc:`\ REST <modules/rest/rest>`
      - Модуль обеспечивающий работу с данными приложения IONDV через REST API.
 
 

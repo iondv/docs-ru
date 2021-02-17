@@ -6,7 +6,9 @@
 
 Установка в одну строку:
 
-``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) -t git -q -i -m localhost:27017 app``
+.. code-block:: bash
+
+   bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) -t git -q -i -m localhost:27017 app
 
 Где параметры для iondv-app ``localhost:27017`` адрес MongoDB, а ``app`` название приложения. После запуска открыть ссылку http://localhost:8888, учетная запись бек офиса **demo**, пароль **ion-demo**.
 
@@ -31,20 +33,29 @@
 На примере простейшего приложения `Nutrition-Tickets <https://github.com/iondv/nutrition-tickets>`_, команда скачивает установщик
 с репозитория github, который собирает и запускает приложение в docker-контейнере в текущей директории.
 
-* из репозтория git
-
-``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \   -t docker -q -i -l mongodb nutrition-tickets``
+*
+  из репозтория git
+  
+  .. code-block:: bash
+  
+     bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \   -t docker -q -i -l mongodb nutrition-tickets
       
-* из архива zip, например полученного с гитхаб 
-``curl -L https://github.com/iondv/nutrition-tickets/archive/master.zip > ./nutrition-tickets.zip`` или созданного в 
-`IONDV. Studio <https://studio.iondv.com>`_. Обратите внимание, что в ``package.json`` созданного приложения в атрибуте
-``"ionModulesDependencies"`` нужно указать модуль для отображения данным - обычно это ``"registry"``.
+*
+  из архива zip, например полученного с гитхаб 
+  ``curl -L https://github.com/iondv/nutrition-tickets/archive/master.zip > ./nutrition-tickets.zip`` или созданного в 
+  `IONDV. Studio <https://studio.iondv.com>`_. Обратите внимание, что в ``package.json`` созданного приложения в атрибуте
+  ``"ionModulesDependencies"`` нужно указать модуль для отображения данным - обычно это ``"registry"``.
 
-``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \   -t docker -q -i -l mongodb ./nutrition-tickets.zip``
+  .. code-block:: bash
+  
+     bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \   -t docker -q -i -l mongodb ./nutrition-tickets.zip
       
-* из папки, при этом оригинальная папка приложения не модифицируется. Обратите внимание, что название папки должно соответствовать неймспейсу приложения (если папка распакована с архива github - то в названии обычно добавляется код ветки - нужно переименовать)
+* 
+  из папки, при этом оригинальная папка приложения не модифицируется. Обратите внимание, что название папки должно соответствовать неймспейсу приложения (если папка распакована с архива github - то в названии обычно добавляется код ветки - нужно переименовать)
 
-``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \   -t docker -q -i -l mongodb ./nutrition-tickets``
+  .. code-block:: bash
+  
+     bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \   -t docker -q -i -l mongodb ./nutrition-tickets
 
 Адрес собранного приложения по умолчанию http://localhost:8888, пользователь ``demo``, пароль ``ion-demo``.
 
@@ -57,19 +68,28 @@
 например в IDE - достаточно открыть папку приложения. Папка приложения создается в папке запуска, либо в папке заданной 
 параметром ``-p``
 
-* из репозитория git в папке ``/workspace``
+* 
+  из репозитория git в папке ``/workspace``
+  
+  .. code-block:: bash
+  
+     bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \  -t git -p /workspace -m localhost:27017 https://github.com/iondv/nutrition-tickets.git
 
-``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \  -t git -p /workspace -m localhost:27017 https://github.com/iondv/nutrition-tickets.git``
+* 
+  из архива zip в текущей папке, например полученного с гитхаб 
+  ``curl -L https://github.com/iondv/nutrition-tickets/archive/master.zip > ./nutrition-tickets.zip`` или созданного в `IONDV. Studio <https://studio.iondv.com>`_. Обратите внимание, что в ``package.json`` созданного приложения в атрибуте
+  ``"ionModulesDependencies"`` нужно указать модуль для отображения данным - обычно это ``"registry"``
 
-* из архива zip в текущей папке, например полученного с гитхаб 
-``curl -L https://github.com/iondv/nutrition-tickets/archive/master.zip > ./nutrition-tickets.zip`` или созданного в `IONDV. Studio <https://studio.iondv.com>`_. Обратите внимание, что в ``package.json`` созданного приложения в атрибуте
-``"ionModulesDependencies"`` нужно указать модуль для отображения данным - обычно это ``"registry"``
+   .. code-block:: bash
+   
+     bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \ -t git -p /workspace -m localhost:27017 ./nutrition-tickets.zip
 
-``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \ -t git -p /workspace -m localhost:27017 ./nutrition-tickets.zip``
+* 
+  из папки, при этом оригинальная папка приложения не модифицируется. Обратите внимание, что название папки должно соответствовать неймспейсу приложения (если папка распакована с архива github - то в названии обычно добавляется код ветки - нужно переименовать)
 
-* из папки, при этом оригинальная папка приложения не модифицируется. Обратите внимание, что название папки должно соответствовать неймспейсу приложения (если папка распакована с архива github - то в названии обычно добавляется код ветки - нужно переименовать)
-
-``bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \    -t git -q -i -m localhost:27017 ./nutrition-tickets``
+  .. code-block:: bash
+  
+     bash <(curl -sL https://raw.githubusercontent.com/iondv/iondv-app/master/iondv-app) \    -t git -q -i -m localhost:27017 ./nutrition-tickets
       
 Параметры запуска
 -------------------
@@ -173,22 +193,30 @@
 
 * Установка последней версии docker для Ubuntu:
 
-1. Добавляем ключ GDP
-``curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -``
+1.
+  Добавляем ключ GDP
+  ``curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -``
 
-2. Проверяем ключ
-``apt-key fingerprint 0EBFCD88``
+2.
+  Проверяем ключ
+  ``apt-key fingerprint 0EBFCD88``
 
-3. Добавляем репозиторий
-``sudo add-apt-repository \   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"``
+3.
+  Добавляем репозиторий
+  
+  .. code-block:: text
    
-4. Обновляем репозитории
-``sudo apt-get update``
+     sudo add-apt-repository \   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+     $(lsb_release -cs) \
+     stable"
+   
+4.
+  Обновляем репозитории
+  ``sudo apt-get update``
 
-5. Ставим последнюю версию
-``sudo apt-get install docker-ce docker-ce-cli containerd.io``
+5.
+  Ставим последнюю версию
+  ``sudo apt-get install docker-ce docker-ce-cli containerd.io``
 
 
 Добавляем текущего пользователя в группу docker:
@@ -198,14 +226,14 @@
 Проверить можно ``docker run hello-world``
 
 Запуск Mongo в докере
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 Запускаем с маппингом на локальный порт:
 
 ``docker run --name mongodb -v mongodb_data:/data/db -p 27017:27017 -d mongo``
 
 Установка node
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 Для ускорения сборки, рекомендуется предварительно скачать локально docker-образ node:10, т.к. он занимает 900Мб.
 

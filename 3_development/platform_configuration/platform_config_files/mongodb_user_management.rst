@@ -24,7 +24,7 @@
 
 Создание пользователя через консольный интерфейс осуществляется командой
 
-.. code-block:: js
+.. code-block:: sh
 
     mongo --eval "(new Mongo()).getDB(<имя бд, куда писать данные авторизации>').createUser( \
     { \
@@ -38,7 +38,7 @@
 
 пример:
 
-.. code-block:: js
+.. code-block:: sh
 
     mongo --eval "(new Mongo()).getDB('admin').createUser( \
     { \
@@ -52,7 +52,7 @@
 
 или в одну строку
 
-.. code-block:: js
+.. code-block:: sh
 
     mongo --eval "(new Mongo()).getDB('admin').createUser({user: 'demo',pwd: '123',roles: [{ role: 'readWrite', db: 'admin' },{ role: 'readWrite', db: 'config' },{ role: 'readWrite', db: 'local' }]})"
 
@@ -64,12 +64,12 @@
 
 Удалить пользователя через CLI mongodb можно командой
 
-.. code-block:: js
+.. code-block:: sh
 
     mongo --eval "(new Mongo()).getDB('<бд с данными авторизации>').dropUser('<имя>')"
 
 пример:
 
-.. code-block:: js
+.. code-block:: sh
 
     mongo --eval "(new Mongo()).getDB('admin').dropUser('demo')"

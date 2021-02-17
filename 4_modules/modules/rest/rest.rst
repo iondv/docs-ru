@@ -1,11 +1,11 @@
-Модуль IONDV. REST
-=====================
+Модуль REST
+===========
 
 **REST** - модуль, обеспечивающий работу с данными приложения IONDV через ``REST API``. Используется для создания веб-сервисов к различным видам данных, созданным, в том числе, только визуальным способом путем проектирования в IONDV. Studio.
 
 
 Описание 
-------------
+--------
 
 Модуль IONDV. REST предназначен для:
 
@@ -18,7 +18,9 @@
 
 **Подробнее:**
 
-* `Авторизация при запросах к сервисам </4_modules/modules/rest/authorization/authorization.rst>`_
-
-* `Cервисы REST </4_modules/modules/rest/services/services.rst>`_
+.. toctree::
+   :titlesonly:
+   
+   authorization/authorization
+   services/services
 

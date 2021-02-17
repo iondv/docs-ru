@@ -1,17 +1,15 @@
-
 Настройки DI
-===============
-
+============
 
 Подключение в глобальных настройках модуля регистра
--------------------------------------------------------
+---------------------------------------------------
 
 
 Пример в deploy.json
-^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
 
-.. code-block:: json
+.. code-block:: text
 
    "modules": {
        "registry": {
@@ -19,11 +17,11 @@
         "di": {
 
 treegridController
-----------------------
+------------------
 
 
 Описание
-^^^^^^^^^^^
+~~~~~~~~
 
 
 Предназначен для создания иерархичных списков объектов в атрибуте-коллекции класса или в навигации класса. 
@@ -31,10 +29,9 @@ treegridController
 Работает с использованием компонента dhtmlxSuite_v51_pro (https://dhtmlx.com/docs/products/dhtmlxTreeGrid/).
 
 Подключение в DI
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
-
-.. code-block:: json
+.. code-block:: text
 
    "treegridController": {
                "module": "applications/viewlib/lib/controllers/api/treegrid",
@@ -59,14 +56,14 @@ treegridController
                      },
 
 Виды шаблонов
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 
 1) ``"template": "treegrid/collection"``
 
 Для атрибута-коллекции. Подключается в представлении формы объекта:   
 
-.. code-block:: json
+.. code-block:: js
 
    "options": {
                "template": "treegrid/collection",
@@ -86,7 +83,7 @@ treegridController
 
 Для навигации класса. Подключение:   
 
-.. code-block:: json
+.. code-block:: js
 
    "options": {
        "template": "treegrid/list"
@@ -96,7 +93,7 @@ treegridController
 
 https://docs.dhtmlx.com/grid__skins.html
 
-.. code-block::
+.. code-block:: text
 
    "options" : {
    ...
@@ -109,13 +106,10 @@ https://docs.dhtmlx.com/grid__skins.html
    }
 
   
-  
-  
-  
 Дополнительные источники информации по treegridController
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* `Иерархическое представление для коллекций <https://git.iondv.ru/ION/platform/blob/v1.24/docs/ru/2_system_description/platform_configuration/deploy_modules.md#настройка-иерархического-представления-для-коллекций>`_.
+* `Иерархическое представление для коллекций <../../../3_development/platform_configuration/platform_config_files/deploy/deploy_modules.html#id11>`_\ .
 
 
 DHTMLX (dhtmlxSuite_v51_pro)
@@ -124,4 +118,4 @@ DHTMLX (dhtmlxSuite_v51_pro)
 * https://docs.dhtmlx.com/
 * https://dhtmlx.com/docs/products/dhtmlxTreeGrid/
 
------
+----

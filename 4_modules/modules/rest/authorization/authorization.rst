@@ -1,15 +1,22 @@
 Авторизация при запросах к сервисам
 ===================================
 
+.. toctree::
+   :hidden:
+   :titlesonly:
+   
+   getting_token
+   proxy_access
 
 Авторизация для доступа к сервисам может быть осуществлена следующими способами:
 
-* `Без авторизации <#id5>`_
-* `По учетной записи <#id6>`_
-* `По токену <#id9>`_
-* `Oauth2 <#id13>`_
+* :ref:`Без авторизации <без-авторизации>`
+* :ref:`По учетной записи <по-учетной-записи>`
+* :ref:`По токену <по-токену>`
+* :ref:`Oauth2 <oauth2>`
 
 
+.. _без-авторизации:
 
 Сервисы без аутентификации
 --------------------------
@@ -25,15 +32,16 @@
            "authMode": {
              "echo": "none"
 
-Запрос к сервису не будет требовать аутентификации, пример запроса ``curl https://dnt.iondv.com/rest/echoo``
+Запрос к сервису не будет требовать аутентификации, пример запроса ``curl https://dnt.iondv.com/rest/echo``
 
-Пример запроса к сервису без аутентификации в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
+Пример запроса к сервису без аутентификации в :doc:`dnt </4_modules/modules/rest/services/services_files/request/request_examples>`:
 `test/modules/rest/echo.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echo.spec.js>`_
 
 .. code-block:: text
 
     /Checking echo-pwd service/# Requesting echo-pwd GET/check if the request can be made using the headers auth
 
+.. _по-учетной-записи:
 
 Сервисы со стандартрным механизмом авторизации по учетной записи
 ----------------------------------------------------------------
@@ -46,12 +54,13 @@
   .. code-block:: bash
 
      curl -u demo@local:ion-demo https://dnt.iondv.com/rest/simple
-пример запроса с авторизацией Basic Auth в `develop-and-test (dnt) </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
-`test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echopwd.spec.js>`_
 
-.. code-block:: text
+  пример запроса с авторизацией Basic Auth в :doc:`develop-and-test (dnt) </4_modules/modules/rest/services/services_files/request/request_examples>`:
+  `test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echopwd.spec.js>`_
 
-    /Checking echo-pwd service/# Requesting echo-pwd GET/check if the request can be made using the basicAuth
+  .. code-block:: text
+
+      /Checking echo-pwd service/# Requesting echo-pwd GET/check if the request can be made using the basicAuth
 
 * путем передачи учетных данных в заголовках запроса
 
@@ -65,13 +74,15 @@
 
      curl -H "auth-user: demo@local" -H "auth-pwd: ion-demo" https://dnt.iondv.com/rest/simple
 
-пример запроса с авторизацией учетными данными в заголовке в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
-`test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echopwd.spec.js>`_
+  пример запроса с авторизацией учетными данными в заголовке в :doc:`dnt </4_modules/modules/rest/services/services_files/request/request_examples>`:
+  `test/modules/rest/echopwd.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echopwd.spec.js>`_
 
-.. code-block:: text
+  .. code-block:: text
 
-    /Checking echo-pwd service/# Requesting echo-pwd GET/check if the request can be made using the headers auth
+      /Checking echo-pwd service/# Requesting echo-pwd GET/check if the request can be made using the headers auth
 
+
+.. _по-токену:
 
 Сервисы с аутентификацией через токен
 -------------------------------------
@@ -96,16 +107,18 @@
 
    curl -H "auth-token: c369a361db9742e9a9ae8e9fe55950a571493812" http://dnt.iondv.com/rest/echo-token
 
-пример запроса с авторизацией через токен в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
+пример запроса с авторизацией через токен в :doc:`dnt </4_modules/modules/rest/services/services_files/request/request_examples>`:
 `test/modules/rest/token.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/token.spec.js>`_
 
 .. code-block:: text
 
     /Checking token service/# basicAuth authorization with admin rights/# check if the generated token is valid (basicAuth) (using echo-token)
 
-подробнее о получении токена: `Получение токена <getting_token.rst>`_
+подробнее о получении токена: :doc:`Получение токена <getting_token>`
 
-`Прокси-клиент </4_modules/modules/rest/authorization/proxy_access.rst>`_ для доступа к функциям модуля без получения нового токена.
+:doc:`Прокси-клиент </4_modules/modules/rest/authorization/proxy_access>` для доступа к функциям модуля без получения нового токена.
+
+.. _oauth2:
 
 Сервисы с аутентификацией методом OAuth2
 ----------------------------------------
@@ -172,7 +185,7 @@
 
       curl -X POST -H "Authorization:Bearer <access_token>" http://dnt.iondv.com/rest/echo-oauth
 
-пример запроса к сервису с авторизацией oauth2 в `dnt </4_modules/modules/rest/services/sevices_files/request/request_examples.rst>`_:
+пример запроса к сервису с авторизацией oauth2 в :doc:`dnt </4_modules/modules/rest/services/services_files/request/request_examples>`:
 `test/modules/rest/echooauth.spec.js <https://github.com/iondv/develop-and-test/blob/master/test/modules/rest/echooauth.spec.js>`_
 
 .. code-block:: text

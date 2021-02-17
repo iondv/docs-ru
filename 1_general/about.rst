@@ -163,7 +163,6 @@ IONDV. Framework - конструктор веб-приложений широк
 ----
 
 `License <https://github.com/iondv/framework/blob/master/LICENSE>`_                              `Contact us <https://iondv.com/portal/contacts>`_                              `English <https://iondv.readthedocs.io/en/latest/index.html>`_
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Copyright (c) 2016-2020 **LLC "ION DV"**.
 All rights reserved.

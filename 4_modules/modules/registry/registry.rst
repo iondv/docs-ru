@@ -1,5 +1,12 @@
 Модуль Registry
-=================
+===============
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+   
+   registry_code
+   registry_treegrid
 
 
 **Модуль регистра (registry)** – ключевой модуль, предназначенный непосредственно для работы с данными на основе структур метаданных – в том числе для ведения проектов, программ, мероприятий и др.
@@ -8,17 +15,17 @@
 ---------
 
 
-* `DI (treegridController) <registry_treegrid.rst>`_
+* :doc:`DI (treegridController) <registry_treegrid>`
 
 Deploy
-^^^^^^
+~~~~~~
 
 Настройка частоты опроса в deploy.json
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Настройка частоты опроса сервера, что объект не заблокирован в deploy.json:
 
-.. code-block::
+.. code-block:: js
 
    "registry": {
       "globals": {
@@ -31,16 +38,16 @@ Deploy
 
 Настройка отображения кнопки "Создать еще" в deploy.json:
 
-.. code-block::
+.. code-block:: js
 
    "createByCopy": [
              "person@khv-childzem" // класс
            ],
 
 Фильтры
--------
+~~~~~~~
 
-Подробнее о фильтрах `здесь </3_development/functionality/functionality_files/filter.rst>`_.
+Подробнее о фильтрах :doc:`здесь </3_development/functionality/functionality_files/filter>`.
 
 Настройка помощь по фильтрам
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -50,6 +57,6 @@ Deploy
 Требования к коду
 -----------------
 
-Cтиль написания компонентов фронт-енда `здесь <registry_code.rst>`_.
+Cтиль написания компонентов фронт-енда :doc:`здесь <registry_code>`.
 
 ----
