@@ -9,7 +9,7 @@
 .. toctree::
    :caption: Содержание:
    :titlesonly:
-   :maxdepth: 1
+   :maxdepth: 2
 
    1_general/about
    2_getting_started/index
