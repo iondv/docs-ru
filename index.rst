@@ -9,14 +9,13 @@
 .. toctree::
    :caption: Содержание:
    :titlesonly:
+   :maxdepth: 1
 
    1_general/about
    2_getting_started/index
    3_development/index
    4_modules/modules
    key_features
-
-5_ion_model_project/index
 
 .. role:: raw-html-m2r(raw)
    :format: html
