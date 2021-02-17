@@ -15,6 +15,7 @@
    2_getting_started/index
    3_development/index
    4_modules/modules
+   5_ion_model_project/index.rst
    key_features
 
 .. role:: raw-html-m2r(raw)
