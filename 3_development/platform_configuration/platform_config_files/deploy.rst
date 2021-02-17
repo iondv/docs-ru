@@ -40,6 +40,6 @@
      - Массив объектов - описание модулей.
 
 
-*Пример файла :doc:`deploy.json <deploy/deploy_ex>`*
+Пример файла :doc:`deploy.json <deploy/deploy_ex>`
 
 ----
