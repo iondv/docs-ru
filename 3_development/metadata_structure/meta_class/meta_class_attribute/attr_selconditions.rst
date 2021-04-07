@@ -204,11 +204,11 @@ JSON
             "type": "SIMPLE",
             "list": [
               {
-                "key": "zakazchik",
+                "key": "customer",
                 "value": "Заказчик"
               },
               {
-                "key": "ispolnitel",
+                "key": "executor",
                 "value": "Исполнитель"
               }
             ],
@@ -227,7 +227,8 @@ JSON
   
 В ссылочном атрибуте необходимо показать только те объекты, у которых в ссылочном классе задан атрибут "selConditions" и в поле ``property`` этого атрибута указано поле связанного класса,чьё значение в поле "value" соответствует условию "operation".
 
-В атрибуте организация, задача показать только организации ("refClass": "organization"), у которых в поле тип ( "property": "type") равно ( "operation": 0) значению zakazchik ("value": "zakazchik").  
+В атрибуте организация, задача показать только организации ("refClass": "organization"), у которых в поле тип ( "property": "type") равно ( "operation": 0) значению 
+azchik ("value": "customer").  
 
 Все условия в ``"selConditions"`` объединяются по условию "И".  
 
@@ -235,7 +236,7 @@ JSON
 
         {
           "orderNumber": 120,
-          "name": "zakazchik",
+          "name": "customer",
           "caption": "Заказчик",
           "type": 13,
           "size": null,
@@ -255,7 +256,7 @@ JSON
             {
               "property": "type",
               "operation": 0,
-              "value": "zakazchik",
+              "value": "customer",
               "nestedConditions": []
             }
           ],
@@ -266,7 +267,7 @@ JSON
         },
         {
           "orderNumber": 130,
-          "name": "ispolnitel",
+          "name": "executor",
           "caption": "Исполнитель",
           "type": 13,
           "size": null,
@@ -286,7 +287,7 @@ JSON
             {
               "property": "type",
               "operation": 0,
-              "value": "ispolnitel",
+              "value": "executor",
               "nestedConditions": []
             }
           ],
