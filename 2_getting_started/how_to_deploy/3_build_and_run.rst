@@ -36,7 +36,7 @@
 
 .. code-block:: text
 
-   NB. Run locally from the framework folder, command templates are listed in the sections describing the purpose of the script.
+   NB. Запускаются локально из папки framework, шаблоны команд указаны в разделах с описанием назначения скрипта.
    
 
 Подробнее о :doc:`скриптах запуска приложения </how_to_deploy/files_in_bin_folder>`
